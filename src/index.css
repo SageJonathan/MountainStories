@@ -853,3 +853,88 @@ main {
 .article-location i {
   color: var(--accent-color);
 }
+
+.globe-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.globe-label {
+  color: white;
+  padding: 0.5rem 1rem;
+  background: rgba(44, 62, 80, 0.8);
+  border-radius: 4px;
+  font-size: 0.9rem;
+  pointer-events: none;
+  white-space: nowrap;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  transform: translate(-50%, -50%);
+}
+
+.globe-legend {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  background: rgba(44, 62, 80, 0.9);
+  padding: 1.2rem 1.5rem;
+  border-radius: 12px;
+  backdrop-filter: blur(8px);
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  color: white;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: transform 0.2s ease;
+}
+
+.legend-item:hover {
+  transform: translateX(-5px);
+}
+
+.legend-color {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.legend-color.poem {
+  background-color: #ff6b6b;
+}
+
+.legend-color.travel {
+  background-color: #4ecdc4;
+}
+
+.legend-color.alpine {
+  background-color: #45b7d1;
+}
+
+@media (max-width: 768px) {
+  .globe-legend {
+    bottom: 20px;
+    right: 20px;
+    padding: 1rem 1.2rem;
+  }
+
+  .legend-item {
+    font-size: 0.9rem;
+  }
+
+  .legend-color {
+    width: 12px;
+    height: 12px;
+  }
+}
