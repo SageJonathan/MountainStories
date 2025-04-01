@@ -1,3 +1,5 @@
+import React from "react";
+import { Link } from "react-router-dom";
 import GlobeScene from "../components/GlobeScene";
 
 const Home = () => {
@@ -11,23 +13,38 @@ const Home = () => {
             Journey through tales from the world's most beautiful peaks
           </p>
         </section>
-        <section className="featured-content">
-          <h2>Latest Stories</h2>
-          <div className="content-grid">
-            <article className="content-card">
-              <h3>Alpine Journal</h3>
-              <p>Latest entries from the mountains</p>
-            </article>
-            <article className="content-card">
+          <h2> Choose your path through the Mountains</h2>
+        <div className="card-grid">
+          <Link to="/travel-stories" className="card travel-stories">
+            <div className="card-content">
               <h3>Travel Stories</h3>
-              <p>Journeys through wild places</p>
-            </article>
-            <article className="content-card">
+              <p>Journey through the world's most breathtaking landscapes</p>
+              <div className="card-icon">
+                <i className="fas fa-mountain"></i>
+              </div>
+            </div>
+          </Link>
+
+          <Link to="/alpine-journal" className="card alpine-journal">
+            <div className="card-content">
+              <h3>Alpine Journal</h3>
+              <p>Technical insights and climbing adventures</p>
+              <div className="card-icon">
+                <i className="fas fa-climbing"></i>
+              </div>
+            </div>
+          </Link>
+
+          <Link to="/poetry" className="card poetry">
+            <div className="card-content">
               <h3>Poetry</h3>
-              <p>Words from the peaks</p>
-            </article>
-          </div>
-        </section>
+              <p>Words inspired by the mountains</p>
+              <div className="card-icon">
+                <i className="fas fa-feather-alt"></i>
+              </div>
+            </div>
+          </Link>
+        </div>
       </div>
     </div>
   );
