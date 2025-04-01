@@ -727,38 +727,14 @@ main {
   }
 }
 
-/* Content section styles */
-.content {
-  padding: 4rem 2rem;
-  max-width: 1200px;
-  margin: 0 auto;
-  background: white;
-}
-
-.section-header {
-  text-align: center;
-  margin-bottom: 3rem;
-}
-
-.section-header h2 {
-  font-family: "Playfair Display", serif;
-  font-size: 2.5rem;
-  color: var(--primary-color);
-  margin-bottom: 1rem;
-}
-
-.section-header p {
-  font-family: "Cormorant Garamond", serif;
-  font-size: 1.2rem;
-  color: var(--secondary-color);
-  opacity: 0.8;
-}
-
+/* Card styles */
 .card-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
-  padding: 1rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .card {
@@ -823,16 +799,7 @@ main {
   background: linear-gradient(135deg, #fff5f5 0%, #ffe3e3 100%);
 }
 
-/* Responsive adjustments */
 @media (max-width: 768px) {
-  .content {
-    padding: 2rem 1rem;
-  }
-
-  .section-header h2 {
-    font-size: 2rem;
-  }
-
   .card {
     height: 250px;
   }
