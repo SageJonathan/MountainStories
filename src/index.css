@@ -182,25 +182,52 @@ main {
 
 .poetry .hero {
   background: url("/poetryBanner.webp");
-  background-position: center 40%;
+  background-position: center 30%;
 }
 
 .about .hero {
-  background: url("/about.webp");
-  background-position: center 20%;
+  background: #0a192f;
+  background-position: center;
+  padding: 4rem 2rem;
+  min-height: 40vh;
+}
+
+.about .hero h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.about .hero-text {
+  font-size: 1.3rem;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.about .hero-text p {
+  margin-bottom: 1rem;
+  opacity: 0.9;
+}
+
+.about .hero-description {
+  font-size: 1.1rem;
+  margin-top: 1.5rem;
+  padding-top: 1.2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
 }
 
 @media (max-width: 768px) {
-  .hero h1 {
-    font-size: 3.5rem;
+  .about .hero {
+    padding: 3rem 2rem;
   }
 
-  .hero-text {
-    font-size: 1.4rem;
+  .about .hero h1 {
+    font-size: 2.8rem;
   }
 
-  .hero-description {
-    font-size: 1.2rem;
+  .about .hero-text {
+    font-size: 1.1rem;
   }
 }
 
@@ -268,10 +295,13 @@ main {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
 }
 
 .profile-image {
-  width: 400px;
+  width: 100%;
   height: 500px;
   border-radius: 8px;
   overflow: hidden;
@@ -290,7 +320,59 @@ main {
   font-style: italic;
   text-align: center;
   line-height: 1.4;
-  max-width: 400px;
+  width: 100%;
+}
+
+.social-links {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 1.5rem;
+  padding: 1rem 0;
+  border-top: 1px solid rgba(44, 62, 80, 0.1);
+  border-bottom: 1px solid rgba(44, 62, 80, 0.1);
+}
+
+.social-link {
+  color: var(--secondary-color);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  transition: all 0.3s ease;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.social-link:hover {
+  color: var(--accent-color);
+  transform: translateY(-2px);
+}
+
+.social-link i {
+  font-size: 1.3rem;
+}
+
+.donate-button {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 1rem 2.5rem;
+  background-color: transparent;
+  color: var(--secondary-color);
+  text-decoration: none;
+  border: 2px solid var(--secondary-color);
+  border-radius: 0;
+  font-weight: 500;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.donate-button:hover {
+  background-color: var(--secondary-color);
+  color: white;
+  transform: translateY(-2px);
 }
 
 .about-intro {
@@ -323,32 +405,29 @@ main {
     gap: 2rem;
   }
 
+  .profile-container {
+    max-width: 500px;
+  }
+
   .profile-image {
-    width: 300px;
     height: 400px;
-  }
-
-  .image-caption {
-    max-width: 300px;
-  }
-
-  .about-intro {
-    text-align: center;
   }
 }
 
 @media (max-width: 768px) {
-  .hero-text {
-    font-size: 1.4rem;
+  .about-header {
+    padding: 2rem 1rem;
+  }
+
+  .profile-container {
+    max-width: 100%;
   }
 
   .profile-image {
-    width: 250px;
     height: 350px;
   }
 
   .image-caption {
-    max-width: 250px;
     font-size: 0.85rem;
   }
 }
