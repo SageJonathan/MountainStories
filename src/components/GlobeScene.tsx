@@ -24,6 +24,13 @@ const Pin: React.FC<{ location: Location }> = ({ location }) => {
   const y = radius * Math.sin(lat);
   const z = radius * Math.cos(lat) * Math.sin(-lon);
 
+  // Create triangular flag shape
+  const shape = new THREE.Shape();
+  shape.moveTo(0, 0);
+  shape.lineTo(0.1, 0.03);
+  shape.lineTo(0, 0.06);
+  shape.lineTo(0, 0);
+
   return (
     <group position={[x, y, z]}>
       <mesh
@@ -36,7 +43,7 @@ const Pin: React.FC<{ location: Location }> = ({ location }) => {
       </mesh>
       {/* Flag */}
       <mesh position={[0, 0.2, 0]}>
-        <planeGeometry args={[0.1, 0.06]} />
+        <shapeGeometry args={[shape]} />
         <meshPhongMaterial
           color={
             location.type === "poem"
@@ -94,7 +101,9 @@ const GlobeScene: React.FC<GlobeSceneProps> = ({ locations }) => {
       <Canvas camera={{ position: [0, 0, 5] }}>
         <Globe locations={locations} />
         <OrbitControls
-          enableZoom={false}
+          enableZoom={true}
+          minDistance={3}
+          maxDistance={8}
           enablePan={false}
           enableDamping
           dampingFactor={0.05}
