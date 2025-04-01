@@ -98,10 +98,10 @@ main {
 /* Hero section styles */
 .hero {
   text-align: center;
-  padding: 8rem 2rem;
+  padding: 12rem 2rem;
   background: url("/alpineBanner.webp");
   background-size: cover;
-  background-position: center;
+  background-position: center 30%;
   color: white;
   width: 100%;
   margin-bottom: 2rem;
@@ -122,49 +122,56 @@ main {
   bottom: 0;
   background: linear-gradient(
     45deg,
-    rgba(52, 152, 219, 0.05),
-    rgba(44, 62, 80, 0.05)
+    rgba(44, 62, 80, 0.2),
+    rgba(44, 62, 80, 0.1)
   );
   z-index: 1;
 }
 
 .hero h1 {
-  font-size: 4.5rem;
-  margin-bottom: 2rem;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-weight: 900;
+  font-family: "Playfair Display", serif;
+  font-size: 5rem;
+  margin-bottom: 1rem;
+  text-transform: none;
+  letter-spacing: 1px;
+  font-weight: 700;
   line-height: 1.1;
-  text-shadow: 2px 2px 0 var(--accent-color);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   color: #ffffff;
 }
 
 .hero-text {
-  font-size: 1.6rem;
-  line-height: 1.8;
-  margin-top: 2rem;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.8rem;
+  line-height: 1.6;
+  margin-top: 1rem;
   font-weight: 300;
-  color: rgba(255, 255, 255, 0.9);
+  color: rgba(255, 255, 255, 0.95);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 .hero-text p {
   margin-bottom: 1.5rem;
-  opacity: 0.9;
-  transition: transform 0.3s ease;
+  opacity: 0.95;
+  transition: all 0.3s ease;
+  font-style: italic;
 }
 
 .hero-text p:hover {
   transform: translateX(10px);
-  color: var(--accent-color);
+  color: #ffffff;
+  opacity: 1;
 }
 
 .hero-description {
-  font-size: 1.3rem;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.4rem;
   font-style: italic;
   margin-top: 3rem;
   padding-top: 2rem;
-  border-top: 1px solid rgba(52, 152, 219, 0.2);
-  color: var(--accent-color);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 /* Add specific hero backgrounds for each page */
@@ -185,15 +192,15 @@ main {
 
 @media (max-width: 768px) {
   .hero h1 {
-    font-size: 3rem;
+    font-size: 3.5rem;
   }
 
   .hero-text {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
 
   .hero-description {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -332,7 +339,7 @@ main {
 
 @media (max-width: 768px) {
   .hero-text {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
 
   .profile-image {

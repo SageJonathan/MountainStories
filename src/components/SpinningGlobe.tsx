@@ -15,7 +15,7 @@ const SpinningGlobe = () => {
     "https://raw.githubusercontent.com/mrdoob/three.js/dev/examples/textures/planets/earth_specular_2048.jpg"
   );
 
-  useFrame((state, delta) => {
+  useFrame((_, delta) => {
     if (globeRef.current) {
       globeRef.current.rotation.y += delta * 0.1;
     }
