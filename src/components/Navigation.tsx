@@ -32,9 +32,6 @@ const Navigation = () => {
         <i className={`fas ${isMobileMenuOpen ? "fa-times" : "fa-bars"}`}></i>
       </button>
       <div className={`nav-links ${isMobileMenuOpen ? "active" : ""}`}>
-        <Link to="/" className="nav-link">
-          Home
-        </Link>
         <Link to="/poetry" className="nav-link">
           Poetry
         </Link>
@@ -47,6 +44,12 @@ const Navigation = () => {
         <Link to="/about" className="nav-link">
           About
         </Link>
+        {isMobileMenuOpen && (
+          <button className="mobile-close-button" onClick={toggleMobileMenu}>
+            <i className="fas fa-times"></i>
+            <span>Close menu</span>
+          </button>
+        )}
       </div>
     </nav>
   );
