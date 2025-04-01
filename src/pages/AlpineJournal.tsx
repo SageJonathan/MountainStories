@@ -4,24 +4,39 @@ const AlpineJournal = () => {
   const articles = [
     {
       title: "First Ascent",
-      excerpt:
-        "A winter ascent of the Matterhorn, where every step is a dance with the mountain's icy embrace.",
+      description:
+        "A technical account of the first successful ascent of the Matterhorn, detailing the challenges and triumphs.",
       imageUrl: "/matterhorn.webp",
-      slug: "first-ascent",
+      link: "/alpine-journal/first-ascent",
+      location: {
+        name: "Matterhorn, Zermatt, Switzerland",
+        latitude: 45.9766,
+        longitude: 7.6586,
+      },
     },
     {
       title: "Mountain Weather",
-      excerpt:
-        "Understanding the complex patterns of alpine conditions and their impact on climbing decisions.",
-      imageUrl: "/alpineWeather.webp",
-      slug: "mountain-weather",
+      description:
+        "Understanding weather patterns in the Alpine region and their impact on climbing conditions.",
+      imageUrl: "/weather.webp",
+      link: "/alpine-journal/mountain-weather",
+      location: {
+        name: "Alpine region, Europe",
+        latitude: 46.2276,
+        longitude: 6.1432,
+      },
     },
     {
       title: "Solo in the Alps",
-      excerpt:
-        "The solitude and self-reliance of solo climbing in the heart of the European Alps.",
-      imageUrl: "/soloAlps.webp",
-      slug: "solo-alps",
+      description:
+        "A personal account of solo climbing in the European Alps, exploring the mental and physical challenges.",
+      imageUrl: "/solo.webp",
+      link: "/alpine-journal/solo-in-the-alps",
+      location: {
+        name: "European Alps",
+        latitude: 46.2276,
+        longitude: 6.1432,
+      },
     },
   ];
 
@@ -35,11 +50,12 @@ const AlpineJournal = () => {
         <div className="content-grid">
           {articles.map((article) => (
             <ArticleCard
-              key={article.slug}
+              key={article.link}
               title={article.title}
-              excerpt={article.excerpt}
+              description={article.description}
               imageUrl={article.imageUrl}
-              slug={article.slug}
+              link={article.link}
+              location={article.location}
             />
           ))}
         </div>

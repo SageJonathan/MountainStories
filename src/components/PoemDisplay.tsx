@@ -3,6 +3,11 @@ interface PoemDisplayProps {
   imageUrl: string;
   imageAnnotation: string;
   poemText: string;
+  location: {
+    name: string;
+    latitude: number;
+    longitude: number;
+  };
 }
 
 const PoemDisplay = ({
@@ -10,6 +15,7 @@ const PoemDisplay = ({
   imageUrl,
   imageAnnotation,
   poemText,
+  location,
 }: PoemDisplayProps) => {
   return (
     <article className="poem-display">
@@ -22,6 +28,10 @@ const PoemDisplay = ({
         {poemText.split("\n").map((line, index) => (
           <p key={index}>{line}</p>
         ))}
+      </div>
+      <div className="poem-location">
+        <i className="fas fa-map-marker-alt"></i>
+        <span>{location.name}</span>
       </div>
     </article>
   );

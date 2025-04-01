@@ -15,6 +15,11 @@ The air is crisp, the world is still,
 As we begin our upward climb.
 Each step a testament to will,
 Each breath a rhythm, keeping time.`,
+      location: {
+        name: "Matterhorn, Zermatt, Switzerland",
+        latitude: 45.9766,
+        longitude: 7.6586,
+      },
     },
     {
       title: "Alpine Echoes",
@@ -29,6 +34,11 @@ The rock, it holds their stories still,
 In every crack and every hill.
 And as we climb, we add our own,
 To the mountain's ancient tone.`,
+      location: {
+        name: "Eiger North Face, Grindelwald, Switzerland",
+        latitude: 46.5778,
+        longitude: 8.0053,
+      },
     },
   ];
 
@@ -46,6 +56,7 @@ To the mountain's ancient tone.`,
             imageUrl={poem.imageUrl}
             imageAnnotation={poem.imageAnnotation}
             poemText={poem.poemText}
+            location={poem.location}
           />
         ))}
       </div>
