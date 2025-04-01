@@ -96,17 +96,58 @@ const Globe: React.FC<{ locations: Location[] }> = ({ locations }) => {
 };
 
 const GlobeScene: React.FC<GlobeSceneProps> = ({ locations }) => {
+  const [isHovering, setIsHovering] = useState(false);
+  const [isActive, setIsActive] = useState(false);
+  const controlsRef = useRef<any>(null);
+
+  const handlePointerOver = () => {
+    setIsHovering(true);
+    if (controlsRef.current) {
+      controlsRef.current.enableZoom = true;
+    }
+  };
+
+  const handlePointerOut = () => {
+    setIsHovering(false);
+    if (controlsRef.current) {
+      controlsRef.current.enableZoom = false;
+    }
+  };
+
+  const handleClick = (e: React.MouseEvent) => {
+    // If clicking outside the globe container, deactivate it
+    if (!e.currentTarget.contains(e.target as Node)) {
+      setIsActive(false);
+      if (controlsRef.current) {
+        controlsRef.current.enableZoom = false;
+        controlsRef.current.enabled = false;
+      }
+    } else {
+      setIsActive(true);
+      if (controlsRef.current) {
+        controlsRef.current.enabled = true;
+      }
+    }
+  };
+
   return (
-    <div style={{ width: "100%", height: "100%" }}>
+    <div
+      style={{ width: "100%", height: "100%" }}
+      onPointerOver={handlePointerOver}
+      onPointerOut={handlePointerOut}
+      onClick={handleClick}
+    >
       <Canvas camera={{ position: [0, 0, 5] }}>
         <Globe locations={locations} />
         <OrbitControls
-          enableZoom={true}
+          ref={controlsRef}
+          enableZoom={isHovering && isActive}
           minDistance={3}
           maxDistance={8}
           enablePan={false}
           enableDamping
           dampingFactor={0.05}
+          enabled={isActive}
         />
       </Canvas>
     </div>
