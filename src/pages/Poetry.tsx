@@ -1,4 +1,37 @@
+import PoemDisplay from "../components/PoemDisplay";
+
 const Poetry = () => {
+  const poems = [
+    {
+      title: "Summit Dawn",
+      imageUrl: "/vert.webp",
+      imageAnnotation: "First light on the Matterhorn, Zermatt, Switzerland",
+      poemText: `The mountain wakes in golden light,
+A silent sentinel of night.
+Its peaks reach for the morning sky,
+As shadows slowly pass us by.
+
+The air is crisp, the world is still,
+As we begin our upward climb.
+Each step a testament to will,
+Each breath a rhythm, keeping time.`,
+    },
+    {
+      title: "Alpine Echoes",
+      imageUrl: "/horz.webp",
+      imageAnnotation: "The Eiger North Face, Grindelwald, Switzerland",
+      poemText: `In the shadow of the wall,
+Where echoes of the past still call,
+The mountain speaks in whispers low,
+Of climbers who have come and gone.
+
+The rock, it holds their stories still,
+In every crack and every hill.
+And as we climb, we add our own,
+To the mountain's ancient tone.`,
+    },
+  ];
+
   return (
     <div className="poetry">
       <section className="hero">
@@ -6,17 +39,15 @@ const Poetry = () => {
         <p>Visions from the peaks</p>
       </section>
       <div className="page-content">
-        <h2>Mountain Verses</h2>
-        <div className="content-grid">
-          <article className="content-card">
-            <h3>Summit Poems</h3>
-            <p>Verses from high places</p>
-          </article>
-          <article className="content-card">
-            <h3>Alpine Haikus</h3>
-            <p>Brief moments in the mountains</p>
-          </article>
-        </div>
+        {poems.map((poem, index) => (
+          <PoemDisplay
+            key={index}
+            title={poem.title}
+            imageUrl={poem.imageUrl}
+            imageAnnotation={poem.imageAnnotation}
+            poemText={poem.poemText}
+          />
+        ))}
       </div>
     </div>
   );
