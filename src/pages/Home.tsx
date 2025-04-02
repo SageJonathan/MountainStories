@@ -60,10 +60,7 @@ const Home = () => {
   return (
     <div className="home">
       <div className="globe-section">
-        <h2>Explore Our Stories</h2>
-        <p className="globe-description">
-          Discover the locations that inspired our mountain tales
-        </p>
+
         <div style={{ height: "400px", width: "100%" }}>
           <GlobeScene locations={locations} />
         </div>
