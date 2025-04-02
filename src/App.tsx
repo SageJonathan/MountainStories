@@ -23,12 +23,15 @@ function App() {
         </main>
         <footer className="footer">
           <div className="footer-content">
-            <a href="mailto:your.email@example.com" className="footer-link">
+            <a
+              href="mailto:sagejonathan.tesol@gmail.com"
+              className="footer-link"
+            >
               <i className="fas fa-envelope"></i>
               Email
             </a>
             <a
-              href="https://www.instagram.com/your-profile"
+              href="https://www.instagram.com/wandering_mapachito"
               target="_blank"
               rel="noopener noreferrer"
               className="footer-link"

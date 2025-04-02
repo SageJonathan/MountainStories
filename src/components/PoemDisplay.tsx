@@ -30,8 +30,8 @@ const PoemDisplay = ({
         ))}
       </div>
       <div className="poem-location">
-        <i className="fas fa-map-marker-alt"></i>
-        <span>{location.name}</span>
+        {/* <i className="fas fa-map-marker-alt"></i> */}
+        {/* <span>{location.name}</span> */}
       </div>
     </article>
   );

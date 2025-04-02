@@ -26,12 +26,15 @@ const About = () => {
             Face of Ranrapalca in the Cordillera Blanca, Peru. June 2023.
           </div>
           <div className="social-links">
-            <a href="mailto:your.email@example.com" className="social-link">
+            <a
+              href="mailto:sagejonathan.tesol@gmail.com"
+              className="social-link"
+            >
               <i className="fas fa-envelope"></i>
               <span>Email</span>
             </a>
             <a
-              href="https://instagram.com/your.instagram"
+              href="https://www.instagram.com/wandering_mapachito"
               target="_blank"
               rel="noopener noreferrer"
               className="social-link"
