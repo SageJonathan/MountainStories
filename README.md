@@ -1,26 +1,20 @@
 # Mountain Stories
 
-A personal platform for unconventional storytelling, featuring climbing narratives, travel experiences, and poetry. Built with React, TypeScript, and Three.js.
+A modern web application showcasing mountain adventures, travel stories, and alpine experiences.
 
 ## Features
 
-- 🌍 Interactive 3D Globe using Three.js
-- 📱 Responsive design for all devices
-- 🎨 Modern, minimalist aesthetic
-- 📖 Multiple content sections:
-  - Alpine Journal
-  - Travel Stories
-  - Poetry
-  - About
-
-## Tech Stack
-
-- React 18
-- TypeScript
-- Vite
-- Three.js
-- CSS3
-- ESLint
+- **Responsive Design**: Beautifully crafted UI that works seamlessly across all devices
+- **Accessibility**: Built with accessibility in mind, including:
+  - Screen reader support using AWS Polly for natural-sounding text-to-speech
+  - Semantic HTML structure
+  - ARIA labels and roles
+  - Keyboard navigation support
+- **Modern Tech Stack**:
+  - React with TypeScript
+  - Vite for fast development and building
+  - Tailwind CSS for styling
+  - AWS Polly for text-to-speech functionality
 
 ## Getting Started
 
@@ -28,59 +22,96 @@ A personal platform for unconventional storytelling, featuring climbing narrativ
 
 - Node.js (v14 or higher)
 - npm or yarn
+- AWS account with Polly service access
 
 ### Installation
 
 1. Clone the repository:
 
-```bash
-git clone https://github.com/SageJonathan/MountainStories.git
-cd MountainStories
-```
+   ```bash
+   git clone https://github.com/yourusername/mountain-stories.git
+   cd mountain-stories
+   ```
 
 2. Install dependencies:
 
-```bash
-npm install
-# or
-yarn install
-```
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
 
-3. Start the development server:
+3. Create a `.env` file in the root directory with your AWS credentials:
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+   ```
+   VITE_AWS_REGION=your-region
+   VITE_AWS_ACCESS_KEY_ID=your-access-key
+   VITE_AWS_SECRET_ACCESS_KEY=your-secret-key
+   ```
 
-4. Open your browser and navigate to `http://localhost:5173`
+4. Start the development server:
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
 
 ## Project Structure
 
 ```
-MountainStories/
-├── public/          # Static assets
+mountain-stories/
 ├── src/
-│   ├── components/ # Reusable components
-│   ├── pages/      # Page components
-│   ├── App.tsx     # Main application component
-│   └── main.tsx    # Application entry point
-├── index.html
-└── package.json
+│   ├── components/     # Reusable UI components
+│   ├── pages/         # Page components
+│   │   ├── Blog_posts/
+│   │   │   ├── AlpineEntries/  # Alpine Journal articles
+│   │   │   └── TravelEntries/  # Travel Stories articles
+│   ├── App.tsx        # Main application component
+│   └── main.tsx       # Application entry point
+├── public/            # Static assets
+└── index.html         # HTML template
 ```
 
-## Development
+## Features in Detail
 
-- `npm run dev` - Start development server
-- `npm run build` - Build for production
-- `npm run preview` - Preview production build
-- `npm run lint` - Run ESLint
+### Screen Reader Integration
+
+The application includes a screen reader feature powered by AWS Polly, providing natural-sounding text-to-speech for all blog posts. The screen reader:
+
+- Uses the "Danielle" voice for a natural reading experience
+- Supports play/pause functionality
+- Works across all blog posts in both Alpine Journal and Travel Stories sections
+- Provides visual feedback during playback
+
+### Blog Sections
+
+1. **Alpine Journal**
+
+   - Technical climbing articles
+   - Mountain weather patterns
+   - Safety and equipment guides
+   - First ascent stories
+
+2. **Travel Stories**
+   - Personal mountain adventures
+   - Cultural experiences
+   - Hidden valleys and ancient paths
+   - Local traditions and cuisine
 
 ## Contributing
 
-This is a personal project, but suggestions and feedback are welcome.
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
 
 ## License
 
-This project is private and all rights are reserved.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Acknowledgments
+
+- AWS Polly for providing natural-sounding text-to-speech
+- The mountain community for inspiration and stories
+- All contributors who help make this project better
