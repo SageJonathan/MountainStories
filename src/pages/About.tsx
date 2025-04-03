@@ -1,6 +1,49 @@
+import { useState, useEffect } from "react";
 
+declare global {
+  interface Window {
+    paypal: {
+      HostedButtons: (options: { hostedButtonId: string }) => {
+        render: (selector: string) => void;
+      };
+    };
+  }
+}
 
 const About = () => {
+  const [showPayPal, setShowPayPal] = useState(false);
+  const [scriptLoaded, setScriptLoaded] = useState(false);
+
+  useEffect(() => {
+    if (showPayPal && !scriptLoaded) {
+      // Load PayPal SDK
+      const script = document.createElement("script");
+      script.src =
+        "https://www.paypal.com/sdk/js?client-id=BAAcno5DXqaxtsULGSQWXE1vfAkZOcZKVx-6-FdDsDj6xL2wehMzSOf7VCbbHPgzMMb7hfK9mzGso4weD4&components=hosted-buttons&disable-funding=venmo&currency=CAD";
+      script.async = true;
+      script.crossOrigin = "anonymous";
+
+      script.onload = () => {
+        setScriptLoaded(true);
+        if (window.paypal) {
+          window.paypal
+            .HostedButtons({
+              hostedButtonId: "KMC6ML6US8QYW",
+            })
+            .render("#paypal-container-KMC6ML6US8QYW");
+        }
+      };
+
+      document.body.appendChild(script);
+
+      return () => {
+        if (script.parentNode) {
+          script.parentNode.removeChild(script);
+        }
+      };
+    }
+  }, [showPayPal, scriptLoaded]);
+
   return (
     <div className="about">
       <section className="hero">
@@ -43,9 +86,23 @@ const About = () => {
               <span>Instagram</span>
             </a>
           </div>
-          <a href="/donate" className="donate-button">
-            Support Mountain Stories
-          </a>
+          {!showPayPal ? (
+            <button
+              className="donate-button"
+              onClick={() => setShowPayPal(true)}
+            >
+              Support Mountain Stories
+            </button>
+          ) : (
+            <div
+              id="paypal-container-KMC6ML6US8QYW"
+              className="donate-container"
+            >
+              {!scriptLoaded && (
+                <div className="loading">Loading PayPal...</div>
+              )}
+            </div>
+          )}
         </div>
 
         <div className="about-intro">
