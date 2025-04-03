@@ -6,7 +6,6 @@ const Poetry = () => {
     <div className="poetry">
       <section className="hero">
         <h1>Poetry</h1>
-        <p>Visions from the peaks</p>
       </section>
       <div className="page-content">
         {poems.map((poem) => (

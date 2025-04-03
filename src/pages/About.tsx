@@ -51,7 +51,6 @@ const About = () => {
           <h1>Mountain Stories</h1>
           <div className="hero-text">
             <p>A platform for unconventional storytelling</p>
-            <p>Where mountains meet words</p>
           </div>
           <div className="hero-description">
             Exploring the intersection of climbing, travel, and literature
