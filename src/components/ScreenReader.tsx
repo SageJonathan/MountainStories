@@ -6,10 +6,12 @@ interface ScreenReaderProps {
 
 const ScreenReader: React.FC<ScreenReaderProps> = ({ content }) => {
   const [isReading, setIsReading] = useState(false);
+  const [voicesLoaded, setVoicesLoaded] = useState(false);
   const utteranceRef = useRef<SpeechSynthesisUtterance | null>(null);
   const synthesisRef = useRef<typeof window.speechSynthesis | null>(null);
 
-  useEffect(() => {
+  // Function to initialize speech synthesis
+  const initializeSpeech = () => {
     if (typeof window !== "undefined" && window.speechSynthesis) {
       synthesisRef.current = window.speechSynthesis;
 
@@ -78,14 +80,41 @@ const ScreenReader: React.FC<ScreenReaderProps> = ({ content }) => {
 
       utteranceRef.current = utterance;
     }
+  };
 
-    return () => {
-      if (synthesisRef.current) {
-        synthesisRef.current.cancel();
-      }
-      utteranceRef.current = null;
-    };
-  }, [content]);
+  useEffect(() => {
+    if (typeof window !== "undefined" && window.speechSynthesis) {
+      // Function to load voices
+      const loadVoices = () => {
+        const voices = window.speechSynthesis.getVoices();
+        if (voices.length > 0) {
+          setVoicesLoaded(true);
+          initializeSpeech(); // Initialize speech when voices are loaded
+        }
+      };
+
+      // Initial load
+      loadVoices();
+
+      // Add event listener for when voices are loaded
+      window.speechSynthesis.addEventListener("voiceschanged", loadVoices);
+
+      return () => {
+        window.speechSynthesis.removeEventListener("voiceschanged", loadVoices);
+        if (synthesisRef.current) {
+          synthesisRef.current.cancel();
+        }
+        utteranceRef.current = null;
+      };
+    }
+  }, []);
+
+  // Reinitialize speech when content changes (navigation)
+  useEffect(() => {
+    if (voicesLoaded) {
+      initializeSpeech();
+    }
+  }, [content, voicesLoaded]);
 
   const toggleReading = () => {
     if (!utteranceRef.current || !synthesisRef.current) return;
@@ -108,6 +137,7 @@ const ScreenReader: React.FC<ScreenReaderProps> = ({ content }) => {
       className="screen-reader-button"
       onClick={toggleReading}
       aria-label={isReading ? "Pause reading" : "Start reading"}
+      disabled={!voicesLoaded}
     >
       <i className={`fas fa-${isReading ? "pause" : "play"}`}></i>
       <span>{isReading ? "Pause Reading" : "Start Reading"}</span>
