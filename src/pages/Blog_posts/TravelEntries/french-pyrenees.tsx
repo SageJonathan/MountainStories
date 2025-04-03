@@ -1,65 +1,88 @@
 import React from "react";
+import ScreenReader from "../../../components/ScreenReader";
 
 const FrenchPyrenees = () => {
+  const content = `
+    French Pyrenees
+    A Trek Through Remote Villages and Stunning Landscapes
+
+    The French Pyrenees offer a unique blend of rugged landscapes and rich cultural heritage. This mountain range, forming a natural border between France and Spain, is home to remote villages, ancient paths, and breathtaking scenery.
+
+    The Mountain Range
+    The Pyrenees stretch from the Atlantic Ocean to the Mediterranean Sea, creating a natural barrier between France and Spain. The range features diverse landscapes, from gentle rolling hills to dramatic peaks, with each region offering its own unique character.
+
+    Remote Villages
+    Scattered throughout the mountains are remote villages that seem frozen in time. These communities have preserved their traditional way of life, with stone houses, narrow streets, and a strong connection to the surrounding landscape. The villages offer a glimpse into a way of life that has endured for centuries.
+
+    Ancient Paths
+    The Pyrenees are crisscrossed by ancient paths that have been used for centuries by shepherds, traders, and pilgrims. These routes, now popular with hikers, offer a unique way to experience the mountains while following in the footsteps of those who came before.
+
+    Local Culture
+    The culture of the Pyrenees is deeply rooted in the mountain environment. Traditional festivals, music, and cuisine all reflect the region's unique character. The local gastronomy, featuring hearty mountain dishes, is a highlight of any visit to the region.
+
+    The French Pyrenees are more than just a mountain range; they are a living landscape where nature and culture intertwine. The remote villages, ancient paths, and stunning scenery create an unforgettable experience that continues to inspire visitors from around the world.
+  `;
+
   return (
     <div className="blog-post">
       <section className="hero">
-        <h1>French Pyrenees</h1>
-        <p className="subtitle">
-          Trekking through remote villages and stunning landscapes
-        </p>
-      </section>
-      <div className="content">
-        <div className="article-content">
-          <p>
-            The French Pyrenees offer a unique blend of rugged mountain
-            landscapes and rich cultural heritage. This journey takes us through
-            remote villages and ancient paths, exploring the connection between
-            people and place.
-          </p>
-
-          <p>
-            The mountain range forms a natural border between France and Spain,
-            creating a unique cultural landscape. The isolation of the valleys
-            has preserved traditional ways of life and fostered distinct local
-            identities.
-          </p>
-
-          <div className="article-image">
-            <img src="/travelBanner.webp" alt="French Pyrenees" />
-            <p className="image-caption">
-              The rugged beauty of the French Pyrenees
-            </p>
+        <div className="hero-content">
+          <h1>French Pyrenees</h1>
+          <div className="hero-text">
+            <p>A Trek Through Remote Villages and Stunning Landscapes</p>
           </div>
-
-          <p>
-            Remote villages dot the landscape, each with its own character and
-            traditions. These communities have adapted to the mountain
-            environment, developing sustainable practices for farming and
-            resource management.
-          </p>
-
-          <p>
-            Ancient paths connect these villages, following natural contours and
-            historical trade routes. Walking these trails offers insights into
-            how people have moved through and lived in these mountains for
-            centuries.
-          </p>
-
-          <p>
-            The local culture is deeply rooted in the mountain environment.
-            Traditional festivals, crafts, and cuisine all reflect the
-            relationship between people and their mountain home. The isolation
-            has helped preserve many unique cultural practices.
-          </p>
-
-          <p>
-            The French Pyrenees continue to offer both physical challenges and
-            cultural discovery. The enduring spirit of mountain life remains
-            evident in the remote valleys and high passes, where traditional
-            ways of life persist alongside modern developments.
-          </p>
         </div>
+      </section>
+
+      <div className="article-content">
+        <ScreenReader content={content} />
+
+        <p>
+          The French Pyrenees offer a unique blend of rugged landscapes and rich
+          cultural heritage. This mountain range, forming a natural border
+          between France and Spain, is home to remote villages, ancient paths,
+          and breathtaking scenery.
+        </p>
+
+        <h2>The Mountain Range</h2>
+        <p>
+          The Pyrenees stretch from the Atlantic Ocean to the Mediterranean Sea,
+          creating a natural barrier between France and Spain. The range
+          features diverse landscapes, from gentle rolling hills to dramatic
+          peaks, with each region offering its own unique character.
+        </p>
+
+        <h2>Remote Villages</h2>
+        <p>
+          Scattered throughout the mountains are remote villages that seem
+          frozen in time. These communities have preserved their traditional way
+          of life, with stone houses, narrow streets, and a strong connection to
+          the surrounding landscape. The villages offer a glimpse into a way of
+          life that has endured for centuries.
+        </p>
+
+        <h2>Ancient Paths</h2>
+        <p>
+          The Pyrenees are crisscrossed by ancient paths that have been used for
+          centuries by shepherds, traders, and pilgrims. These routes, now
+          popular with hikers, offer a unique way to experience the mountains
+          while following in the footsteps of those who came before.
+        </p>
+
+        <h2>Local Culture</h2>
+        <p>
+          The culture of the Pyrenees is deeply rooted in the mountain
+          environment. Traditional festivals, music, and cuisine all reflect the
+          region's unique character. The local gastronomy, featuring hearty
+          mountain dishes, is a highlight of any visit to the region.
+        </p>
+
+        <p>
+          The French Pyrenees are more than just a mountain range; they are a
+          living landscape where nature and culture intertwine. The remote
+          villages, ancient paths, and stunning scenery create an unforgettable
+          experience that continues to inspire visitors from around the world.
+        </p>
       </div>
     </div>
   );

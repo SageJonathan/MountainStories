@@ -1152,3 +1152,27 @@ main {
   color: #666;
   font-style: italic;
 }
+
+.screen-reader-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: var(--secondary-color);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin: 1rem 0;
+  font-size: 0.9rem;
+}
+
+.screen-reader-button:hover {
+  background: #0a192f;
+  transform: translateY(-1px);
+}
+
+.screen-reader-button i {
+  font-size: 1rem;
+}
