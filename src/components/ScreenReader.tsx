@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 
 interface ScreenReaderProps {
   content: string;
@@ -6,33 +6,52 @@ interface ScreenReaderProps {
 
 const ScreenReader: React.FC<ScreenReaderProps> = ({ content }) => {
   const [isReading, setIsReading] = useState(false);
-  const [utterance, setUtterance] = useState<SpeechSynthesisUtterance | null>(
-    null
-  );
+  const utteranceRef = useRef<SpeechSynthesisUtterance | null>(null);
 
   useEffect(() => {
     if (typeof window !== "undefined" && window.speechSynthesis) {
-      const newUtterance = new SpeechSynthesisUtterance(content);
-      newUtterance.onend = () => setIsReading(false);
-      setUtterance(newUtterance);
+      // Create a new utterance
+      const utterance = new SpeechSynthesisUtterance(content);
+
+      // Configure the utterance
+      utterance.rate = 1.0; // Normal speed
+      utterance.pitch = 1.0; // Normal pitch
+      utterance.volume = 1.0; // Full volume
+
+      // Set up event handlers
+      utterance.onend = () => {
+        setIsReading(false);
+        utteranceRef.current = null;
+      };
+
+      utterance.onerror = (event) => {
+        console.error("Speech synthesis error:", event);
+        setIsReading(false);
+        utteranceRef.current = null;
+      };
+
+      utteranceRef.current = utterance;
     }
 
     return () => {
-      if (utterance) {
+      if (utteranceRef.current) {
         window.speechSynthesis.cancel();
+        utteranceRef.current = null;
       }
     };
   }, [content]);
 
   const toggleReading = () => {
-    if (!utterance) return;
+    if (!utteranceRef.current) return;
 
     if (isReading) {
       window.speechSynthesis.pause();
     } else {
-      window.speechSynthesis.resume();
       if (window.speechSynthesis.paused) {
-        window.speechSynthesis.speak(utterance);
+        window.speechSynthesis.resume();
+      } else {
+        window.speechSynthesis.cancel(); // Cancel any ongoing speech
+        window.speechSynthesis.speak(utteranceRef.current);
       }
     }
     setIsReading(!isReading);
