@@ -16,29 +16,35 @@ A minimalist web application that brings mountain adventures to life through cle
 - **Accessibility**: AWS Polly for natural-sounding text-to-speech 🔊
 - **Development**: ESLint for code quality, Vite for fast builds 🚀
 
-## Content Structure 📚
-
-### Blog Organization
+## Project Structure 📁
 
 ```
-Blog_posts/
-├── AlpineEntries/     # Technical climbing content 🧗
-│   ├── first-ascent.tsx
-│   ├── solo-climbing.tsx
-│   └── weather-patterns.tsx
+src/
+├── components/         # Reusable UI components
+│   ├── ScreenReader.tsx    # AWS Polly integration
+│   ├── Navbar.tsx          # Navigation component
+│   └── Footer.tsx          # Footer component
 │
-└── TravelEntries/     # Personal mountain adventures 🌍
-    ├── swiss-alps-adventure.tsx
-    ├── french-pyrenees.tsx
-    └── italian-dolomites.tsx
+├── pages/              # Page components
+│   ├── Home.tsx            # Landing page
+│   ├── About.tsx           # About section
+│   ├── AlpineJournal.tsx   # Alpine Journal section
+│   ├── TravelStories.tsx   # Travel Stories section
+│   └── Blog_posts/         # Blog post components
+│       ├── AlpineEntries/  # Technical climbing content
+│       └── TravelEntries/  # Personal mountain adventures
+│
+├── App.tsx             # Main application component
+├── main.tsx            # Application entry point
+└── index.css           # Global styles
 ```
 
-Each blog post follows a consistent structure:
+### Key Components 🎯
 
-- Hero section with title and subtitle 🎯
-- Screen reader integration 🔊
-- Content sections with semantic HTML 📝
-- Responsive images and typography 🖼️
+- **ScreenReader**: AWS Polly integration for natural text-to-speech 🔊
+- **Blog Posts**: Consistent structure with hero sections and semantic content 📝
+- **Navigation**: Clean, accessible navigation system 🧭
+- **Styling**: Modern CSS with custom properties and responsive design 🎨
 
 ### Screen Reader Feature 🎧
 
