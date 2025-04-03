@@ -7,7 +7,6 @@ const TravelStories = () => {
     <div className="travel-stories">
       <section className="hero">
         <h1>Travel Stories</h1>
-        <p>Journeys through mountain landscapes</p>
       </section>
       <div className="page-content">
         <div className="content-grid">
