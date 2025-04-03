@@ -20,31 +20,41 @@ A minimalist web application that brings mountain adventures to life through cle
 
 ```
 src/
-├── components/         # Reusable UI components
-│   ├── ScreenReader.tsx    # AWS Polly integration
-│   ├── Navbar.tsx          # Navigation component
-│   └── Footer.tsx          # Footer component
+├── assets/            # Static assets and images
 │
-├── pages/              # Page components
-│   ├── Home.tsx            # Landing page
-│   ├── About.tsx           # About section
-│   ├── AlpineJournal.tsx   # Alpine Journal section
-│   ├── TravelStories.tsx   # Travel Stories section
-│   └── Blog_posts/         # Blog post components
-│       ├── AlpineEntries/  # Technical climbing content
-│       └── TravelEntries/  # Personal mountain adventures
+├── components/        # Reusable UI components
+│   ├── ArticleCard.tsx    # Blog post card component
+│   ├── GlobeScene.tsx     # 3D globe visualization
+│   ├── Navigation.tsx     # Main navigation component
+│   ├── ScreenReader.tsx   # AWS Polly integration
+│   └── SpinningGlobe.tsx  # Animated globe component
 │
-├── App.tsx             # Main application component
-├── main.tsx            # Application entry point
-└── index.css           # Global styles
+├── content_data/      # Content management
+│   ├── alpineArticles/    # Alpine Journal content
+│   ├── poems/             # Poetry content
+│   └── travelArticles/    # Travel Stories content
+│
+├── pages/             # Page components
+│   ├── Home.tsx           # Landing page with globe
+│   ├── About.tsx          # About section
+│   ├── AlpineJournal.tsx  # Alpine Journal section
+│   ├── Poetry.tsx         # Poetry section
+│   ├── TravelStories.tsx  # Travel Stories section
+│   └── Blog_posts/        # Individual blog posts
+│
+├── App.tsx            # Main application component
+├── main.tsx           # Application entry point
+├── index.css          # Global styles
+└── vite-env.d.ts      # Vite type definitions
 ```
 
 ### Key Components 🎯
 
 - **ScreenReader**: AWS Polly integration for natural text-to-speech 🔊
-- **Blog Posts**: Consistent structure with hero sections and semantic content 📝
+- **GlobeScene**: Interactive 3D globe visualization 🌍
+- **ArticleCard**: Consistent blog post preview cards 📝
 - **Navigation**: Clean, accessible navigation system 🧭
-- **Styling**: Modern CSS with custom properties and responsive design 🎨
+- **Content Data**: Organized content management system 📚
 
 ### Screen Reader Feature 🎧
 
