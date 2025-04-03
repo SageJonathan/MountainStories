@@ -13,9 +13,9 @@ const ScreenReader: React.FC<ScreenReaderProps> = ({ content }) => {
       // Create a new utterance
       const utterance = new SpeechSynthesisUtterance(content);
 
-      // Configure the utterance
-      utterance.rate = 1.0; // Normal speed
-      utterance.pitch = 1.0; // Normal pitch
+      // Configure the utterance for a more natural reading experience
+      utterance.rate = 0.95; // Slightly slower for better clarity
+      utterance.pitch = 1.05; // Slightly higher for more engaging tone
       utterance.volume = 1.0; // Full volume
 
       // Set up event handlers
