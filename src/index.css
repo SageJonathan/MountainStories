@@ -1176,3 +1176,22 @@ main {
 .screen-reader-button i {
   font-size: 1rem;
 }
+
+.screen-reader-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.screen-reader-error {
+  color: #dc2626;
+  font-size: 0.875rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.screen-reader-error i {
+  font-size: 1rem;
+}
