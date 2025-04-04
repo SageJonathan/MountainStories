@@ -23,9 +23,22 @@ import forestSong from "../../assets/poems/ForestSong.webp"
 import liberté from "../../assets/poems/Liberté.webp"
 import laRivière from "../../assets/poems/LaRivière.webp"
 import leTableau from "../../assets/poems/LeTableau.webp"
+
 export const poems = [
+    // {
+  //   id: Template,
+  //   title: "",
+  //   content: ``,
+  //   image: ,
+  //   imageAnnotation: "",
+  //   location: {
+  //     name: "",
+  //     latitude: 46.5778,
+  //     longitude: 8.0053,
+  //   },
+  // },
   {
-    id: 1,
+    id: 24,
     title: "Red Rocks",
     content: `Suspended, above the sweet-scented grass 
  Of desert trails and the breath that keeps 
@@ -48,7 +61,7 @@ export const poems = [
     },
   },
   {
-    id: 2,
+    id: 23,
     title: "Sept Ans",
     content: `Près de sept ans, à vaincre le meilleur de moi.
  Cherchant dans la lumière du jour
@@ -86,7 +99,7 @@ export const poems = [
     },
   },
   {
-    id: 3,
+    id:  22 ,
     title: "Chant Intime",
     content: `Comme un chant intime, 
  Fragile- et jeune encore, 
@@ -109,7 +122,7 @@ export const poems = [
     },
   },
   {
-    id: 4,
+    id: 21,
     title: "Mariposas",
     content: `Cuando los frutos de los árboles
 Me canta los cantos de las aves,
@@ -126,7 +139,7 @@ Tan dulce y despididas.`,
     },
   },
   {
-    id: 5,
+    id: 20  ,
     title: "Stillness",
     content: `Hush now…your mind is loud;
  Still among the valley and its eddies. 
@@ -142,7 +155,7 @@ Tan dulce y despididas.`,
     },
   },
   {
-    id: 6,
+    id: 19,
     title: "Naissance",
     content: `Aux premières lueurs du jour
 Les ombres se dévoilent autour de moi ;
@@ -170,7 +183,7 @@ Mais cache en elle des plaisirs fantômes. `,
     },
   },
   {
-    id: 7,
+    id: 18  ,
     title: "High Winds",
     content: `There is a silence in the high winds
  Which deafens the voices within.
@@ -192,7 +205,7 @@ Who weighs our ideals, our deeds of merit.`,
     },
   },
   {
-    id: 8,
+    id:17 ,
     title: "Glace",
     content: `À travers la rivière; 
  Sur ce flanc de mont fier;
@@ -214,7 +227,7 @@ Ou les cils d’une fleur.`,
     },
   },
   {
-    id: 9,
+    id: 16,
     title: "Kluane",
     content: `Reflected within the naked eye 
 Whose sight commands the sleigh:
@@ -238,7 +251,7 @@ Nestled by the run of salmon wild.`,
     },
   }, 
   {
-    id: 10,
+    id: 15 ,
     title: "Les Hirondelles",
     content: `N’entendez-vous pas le clocher des hirondelles? 
  Ces alliées ailés annonçant le baptême continuel de l’être.
@@ -255,7 +268,7 @@ Nous pour qui nos racines sont des fleurs.
     },
   }, 
   {
-    id: 11,
+    id: 14  ,
     title: "Espejos",
     content: `En ojos profusos
     Que nos son los míos, 
@@ -278,7 +291,7 @@ Nous pour qui nos racines sont des fleurs.
     },
   }, 
   {
-    id: 12,
+    id: 13,
     title: "Le Cadre Humain",
     content: `La raison se cherche
 Parmi les couloirs cloîtrés,
@@ -297,7 +310,7 @@ Fendit le cadre humain.`,
     },
   }, 
   {  
-    id: 13,
+    id: 12,
     title: "L'Ame Immortelle",
     content: `Ma communauté? 
  Quelle flamme, quel vent,
@@ -312,7 +325,7 @@ Fendit le cadre humain.`,
     },
   }, 
   {
-    id: 14,
+    id: 11,
     title: "Melancholia",
     content: `I would die in the auburn light
  That peers down this canopy;
@@ -333,7 +346,7 @@ Faded thus upon a bed of leaves
     },
   }, 
   {
-    id: 15,
+    id: 10,
     title: "Mortality",
     content: `The world is on fire;
  And love is the wind 
@@ -355,7 +368,7 @@ Faded thus upon a bed of leaves
     },
   },
    {
-    id: 16,
+    id: 9,
     title: "Los Lobos",
     content: `By and by, the wolves in my chest
 Leap out into the night wind,
@@ -382,7 +395,7 @@ I hear the muffled songs of my heart. `,
     },
   }, 
   {
-    id: 17,
+    id:8 ,
     title: "The Snow",
     content: `The steep slopes have masked their edges,
 Now soft shimmered with the fallen snow. 
@@ -409,7 +422,7 @@ Might I repay this conferring gift of peace?
     },
   },
   {
-    id: 18,
+    id:7 ,
     title: "L'Automne",
     content: `Au temps que la lumière
 Se fend au froid – et se raccourci
@@ -426,7 +439,7 @@ Dont nous voyons dans ces champs éventré. `,
     },
   },
   {
-    id: 19,
+    id: 6,
     title: " Mt. Alberta",
     content: `This night, of stars set to slumber
 By the course of distant embers,
@@ -446,7 +459,7 @@ Despondent, lay by walls of clay.`,
     },
   }, 
   {
-    id: 20,
+    id: 5,
     title: "Colombia",
     content: `Time, out of its snowy cloak
 Slithers into blossoming spring.
@@ -465,7 +478,7 @@ Of a pale blue that seems to sing.`,
     },
   }, 
   {
-    id: 6,
+    id: 4,
     title: " Forest Song",
     content: ` L’écorce de mon cœur,
 De sa douleur se dérobe;
@@ -489,7 +502,7 @@ Qui nous plonge de nouveau au mystère.`,
     },
   }, 
   {
-    id: 6,
+    id: 3,
     title: " Liberté",
     content: `Air d’éveil;
  Qui au matin résonne 
@@ -506,7 +519,7 @@ Du ciel tombé, comme un rêve.`,
     },
   }, 
   {
-    id: 6,
+    id: 2,
     title: " La Rivière",
     content: `Songe, mon cœur;
 Et quitte tes tréfonds intime.
@@ -524,7 +537,7 @@ Nous nous rencontrons de nouveau ailleurs.`,
     },
   }, 
   {
-    id: 6,         
+    id: 1,         
     title: "Le Tableau",
     content: `Ma blanche peau se fend,
  Seul et sans témoin, aux sons
@@ -540,16 +553,4 @@ Nous nous rencontrons de nouveau ailleurs.`,
       longitude: 8.0053,
     },
   }, 
-  // {
-  //   id: 6,
-  //   title: "",
-  //   content: ``,
-  //   image: ,
-  //   imageAnnotation: "",
-  //   location: {
-  //     name: "",
-  //     latitude: 46.5778,
-  //     longitude: 8.0053,
-  //   },
-  // },
 ];
