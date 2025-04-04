@@ -61,8 +61,8 @@ src/
 - Natural-sounding narration for all content 🎵
 - Simple play/pause controls ⏯️
 - Visual feedback during playback 👀
-- Downloadable MP3 file for later use![floppy disk icon]
-- Dynamic file name to match story title
+- Downloadable MP3 file for later use 🖴 
+- Dynamic file name to match story title 📝
 
 ## Design Principles 🎨
 
