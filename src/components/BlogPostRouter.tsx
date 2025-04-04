@@ -10,9 +10,12 @@ import FrenchPyrenees from "../pages/Blog_posts/TravelEntries/french-pyrenees";
 const BlogPostRouter: React.FC = () => {
   return (
     <Routes>
+      {/* Alpine Journal Routes */}
       <Route path="/first-ascent" element={<FirstAscent />} />
       <Route path="/mountain-weather" element={<MountainWeather />} />
       <Route path="/solo-in-the-alps" element={<SoloInTheAlps />} />
+
+      {/* Travel Stories Routes */}
       <Route path="/swiss-alps-adventure" element={<SwissAlpsAdventure />} />
       <Route path="/italian-dolomites" element={<ItalianDolomites />} />
       <Route path="/french-pyrenees" element={<FrenchPyrenees />} />
