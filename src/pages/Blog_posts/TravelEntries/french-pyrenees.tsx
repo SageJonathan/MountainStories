@@ -35,7 +35,7 @@ const FrenchPyrenees = () => {
       </section>
 
       <div className="article-content">
-        <ScreenReader content={content} />
+        <ScreenReader content={content} title="French Pyrenees" />
 
         <p>
           The French Pyrenees offer a unique blend of rugged landscapes and rich

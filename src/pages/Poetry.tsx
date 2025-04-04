@@ -1,5 +1,4 @@
-import React from "react";
-import { poems } from "../content_data/poems/poems";
+import { poems } from "./Poems/poems";
 
 const Poetry = () => {
   return (

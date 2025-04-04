@@ -35,7 +35,7 @@ const ItalianDolomites = () => {
       </section>
 
       <div className="article-content">
-        <ScreenReader content={content} />
+        <ScreenReader content={content} title="Italian Dolomites" />
 
         <p>
           The Italian Dolomites present a unique landscape of dramatic peaks and

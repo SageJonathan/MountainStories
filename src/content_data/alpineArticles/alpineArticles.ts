@@ -4,7 +4,7 @@ export const alpineArticles = [
     description:
       "A technical account of the first successful ascent of the Matterhorn, detailing the challenges and triumphs.",
     imageUrl: "/matterhorn.webp",
-    link: "/alpine-journal/first-ascent",
+    link: "/first-ascent",
     location: {
       name: "Matterhorn, Zermatt, Switzerland",
       latitude: 45.9766,
@@ -16,7 +16,7 @@ export const alpineArticles = [
     description:
       "Understanding weather patterns in the Alpine region and their impact on climbing conditions.",
     imageUrl: "/weather.webp",
-    link: "/alpine-journal/mountain-weather",
+    link: "/mountain-weather",
     location: {
       name: "Alpine region, Europe",
       latitude: 46.2276,
@@ -28,7 +28,7 @@ export const alpineArticles = [
     description:
       "A personal account of solo climbing in the European Alps, exploring the mental and physical challenges.",
     imageUrl: "/solo.webp",
-    link: "/alpine-journal/solo-in-the-alps",
+    link: "/solo-in-the-alps",
     location: {
       name: "European Alps",
       latitude: 46.2276,

@@ -1,4 +1,3 @@
-import React from "react";
 import ArticleCard from "../components/ArticleCard";
 import { travelArticles } from "../content_data/travelArticles/travelArticles";
 
