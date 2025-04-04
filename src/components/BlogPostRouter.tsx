@@ -1,6 +1,6 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import FirstAscent from "../pages/Blog_posts/AlpineEntries/first-ascent";
+import BergSlawinski from "../pages/Blog_posts/AlpineEntries/BergSlawinski";
 import MountainWeather from "../pages/Blog_posts/AlpineEntries/mountain-weather";
 import SoloInTheAlps from "../pages/Blog_posts/AlpineEntries/solo-in-the-alps";
 import SwissAlpsAdventure from "../pages/Blog_posts/TravelEntries/swiss-alps-adventure";
@@ -11,7 +11,7 @@ const BlogPostRouter: React.FC = () => {
   return (
     <Routes>
       {/* Alpine Journal Routes */}
-      <Route path="/first-ascent" element={<FirstAscent />} />
+      <Route path="/berg-slawinski" element={<BergSlawinski />} />
       <Route path="/mountain-weather" element={<MountainWeather />} />
       <Route path="/solo-in-the-alps" element={<SoloInTheAlps />} />
 

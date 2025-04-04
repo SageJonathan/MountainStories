@@ -1,10 +1,10 @@
 export const alpineArticles = [
   {
-    title: "First Ascent",
+    title: "Berg Slawinski",
     description:
       "A technical account of the first successful ascent of the Matterhorn, detailing the challenges and triumphs.",
     imageUrl: "/matterhorn.webp",
-    link: "/first-ascent",
+    link: "/berg-slawinski",
     location: {
       name: "Matterhorn, Zermatt, Switzerland",
       latitude: 45.9766,
