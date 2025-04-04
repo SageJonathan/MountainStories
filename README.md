@@ -29,9 +29,8 @@ src/
 │   ├── ScreenReader.tsx   # AWS Polly integration
 │   └── SpinningGlobe.tsx  # Animated globe component
 │
-├── content_data/      # Content management
+├── content_data/      # Meta data management
 │   ├── alpineArticles/    # Alpine Journal content
-│   ├── poems/             # Poetry content
 │   └── travelArticles/    # Travel Stories content
 │
 ├── pages/             # Page components
@@ -40,12 +39,12 @@ src/
 │   ├── AlpineJournal.tsx  # Alpine Journal section
 │   ├── Poetry.tsx         # Poetry section
 │   ├── TravelStories.tsx  # Travel Stories section
-│   └── Blog_posts/        # Individual blog posts
+│   ├── Blog_posts/        # Individual blog posts
+│   └── poems/        # Individual poems
 │
 ├── App.tsx            # Main application component
 ├── main.tsx           # Application entry point
 ├── index.css          # Global styles
-└── vite-env.d.ts      # Vite type definitions
 ```
 
 ### Key Components 🎯
@@ -62,6 +61,8 @@ src/
 - Natural-sounding narration for all content 🎵
 - Simple play/pause controls ⏯️
 - Visual feedback during playback 👀
+- Downloadable MP3 file for later use![floppy disk icon]
+- Dynamic file name to match story title
 
 ## Design Principles 🎨
 
