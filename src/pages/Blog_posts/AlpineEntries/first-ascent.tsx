@@ -1,4 +1,3 @@
-import React from "react";
 import ScreenReader from "../../../components/ScreenReader";
 
 const FirstAscent = () => {

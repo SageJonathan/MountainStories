@@ -1,4 +1,3 @@
-import React from "react";
 import { poems } from "./Poems/poems";
 
 const Poetry = () => {
