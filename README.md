@@ -1,86 +1,89 @@
-# Mountain Stories
+# Mountain Stories 🏔️
 
-A personal platform for unconventional storytelling, featuring climbing narratives, travel experiences, and poetry. Built with React, TypeScript, and Three.js.
+A minimalist web application that brings mountain adventures to life through clean design and modern technology. Built with a focus on content and accessibility, this project showcases how simplicity and innovation can work together.
 
-## Features
+## Philosophy 🧠
 
-- 🌍 Interactive 3D Globe using Three.js
-- 📱 Responsive design for all devices
-- 🎨 Modern, minimalist aesthetic
-- 📖 Multiple content sections:
-  - Alpine Journal
-  - Travel Stories
-  - Poetry
-  - About
+- **Content First**: Clean, readable layouts that put the focus on the stories 📖
+- **Accessibility by Design**: Built-in screen reader support and semantic structure ♿
+- **Progressive Enhancement**: Modern features enhance the experience without compromising core functionality ⚡
+- **Minimalist Aesthetic**: Uncluttered design that lets the content speak for itself 🎨
 
-## Tech Stack
+## Tech Stack 🛠️
 
-- React 18
-- TypeScript
-- Vite
-- Three.js
-- CSS3
-- ESLint
+- **Core**: React + TypeScript + Vite ⚛️
+- **Styling**: Pure CSS3 with modern features (CSS Grid, Flexbox, Custom Properties) 🎨
+- **Accessibility**: AWS Polly for natural-sounding text-to-speech 🔊
+- **Development**: ESLint for code quality, Vite for fast builds 🚀
 
-## Getting Started
-
-### Prerequisites
-
-- Node.js (v14 or higher)
-- npm or yarn
-
-### Installation
-
-1. Clone the repository:
-
-```bash
-git clone https://github.com/SageJonathan/MountainStories.git
-cd MountainStories
-```
-
-2. Install dependencies:
-
-```bash
-npm install
-# or
-yarn install
-```
-
-3. Start the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-```
-
-4. Open your browser and navigate to `http://localhost:5173`
-
-## Project Structure
+## Project Structure 📁
 
 ```
-MountainStories/
-├── public/          # Static assets
-├── src/
-│   ├── components/ # Reusable components
-│   ├── pages/      # Page components
-│   ├── App.tsx     # Main application component
-│   └── main.tsx    # Application entry point
-├── index.html
-└── package.json
+src/
+├── assets/            # Static assets and images
+│
+├── components/        # Reusable UI components
+│   ├── ArticleCard.tsx    # Blog post card component
+│   ├── BlogPostRouter.tsx # Blog post routing component
+│   ├── DownloadMP3.tsx    # MP3 download functionality
+│   ├── Footer.tsx         # Site footer component
+│   ├── GlobeScene.tsx     # 3D globe visualization
+│   ├── Navigation.tsx     # Main navigation component
+│   ├── ScreenReader.tsx   # AWS Polly integration
+│   └── SpinningGlobe.tsx  # Animated globe component
+│
+├── content_data/      # Meta data management
+│   ├── alpineArticles/    # Alpine Journal content
+│   └── travelArticles/    # Travel Stories content
+│
+├── pages/             # Page components
+│   ├── Home.tsx           # Landing page with globe
+│   ├── About.tsx          # About section
+│   ├── AlpineJournal.tsx  # Alpine Journal section
+│   ├── Poetry.tsx         # Poetry section
+│   ├── TravelStories.tsx  # Travel Stories section
+│   ├── Blog_posts/        # Individual blog posts
+│   │   ├── AlpineEntries/ # Alpine Journal entries
+│   │   └── TravelEntries/ # Travel Stories entries
+│   └── Poems/            # Poetry entries
+│
+├── App.tsx            # Main application component
+├── main.tsx           # Application entry point
+├── index.css          # Global styles
 ```
 
-## Development
+## Key Components 🎯
 
-- `npm run dev` - Start development server
-- `npm run build` - Build for production
-- `npm run preview` - Preview production build
-- `npm run lint` - Run ESLint
+- **ScreenReader**: AWS Polly integration for natural text-to-speech 🔊
+- **GlobeScene**: Interactive 3D globe visualization 🌍
+- **ArticleCard**: Consistent blog post preview cards 📝
+- **Navigation**: Clean, accessible navigation system 🧭
+- **Content Data**: Organized content management system 📚
 
-## Contributing
+## Screen Reader Feature 🎧
 
-This is a personal project, but suggestions and feedback are welcome.
+- Powered by AWS Polly's "Danielle" voice 🗣️
+- Natural-sounding narration for all content 🎵
+- Simple play/pause controls ⏯️
+- Visual feedback during playback 👀
+- MP3 download option for offline listening 💾
 
-## License
+## Design Principles 🎨
 
-This project is private and all rights are reserved.
+- **Typography**: Clean, readable fonts with proper hierarchy ✒️
+- **Spacing**: Generous whitespace for better readability 📏
+- **Color**: Subtle, nature-inspired palette 🎨
+- **Responsiveness**: Fluid layouts that work on all devices 📱
+- **Performance**: Optimized assets and minimal dependencies ⚡
+
+## Development Approach 💻
+
+- **Component-Based**: Reusable, focused components 🔄
+- **Type Safety**: Full TypeScript support 🛡️
+- **Modern CSS**: Using native CSS features instead of frameworks 🎯
+- **Accessibility First**: Built-in screen reader and semantic markup ♿
+
+## Acknowledgments 🙏
+
+- AWS Polly for providing natural-sounding text-to-speech 🔊
+- The mountain community for inspiration and stories 🏔️
