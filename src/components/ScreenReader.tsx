@@ -3,11 +3,16 @@ import { PollyClient, SynthesizeSpeechCommand } from "@aws-sdk/client-polly";
 
 interface ScreenReaderProps {
   content: string;
+  title?: string;
 }
 
-const ScreenReader: React.FC<ScreenReaderProps> = ({ content }) => {
+const ScreenReader: React.FC<ScreenReaderProps> = ({
+  content,
+  title = "story",
+}) => {
   const [isReading, setIsReading] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
+  const [isDownloading, setIsDownloading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const audioRef = useRef<HTMLAudioElement | null>(null);
 
@@ -50,19 +55,22 @@ const ScreenReader: React.FC<ScreenReaderProps> = ({ content }) => {
 
   const polly = initializePolly();
 
-  const synthesizeSpeech = async () => {
+  const synthesizeSpeech = async (isDownload: boolean = false) => {
     if (!polly) {
       setError("Speech service is not available");
       return;
     }
 
     try {
-      setIsLoading(true);
+      if (isDownload) {
+        setIsDownloading(true);
+      } else {
+        setIsLoading(true);
+      }
       setError(null);
 
       console.log("Starting speech synthesis...");
 
-      // Create the command
       const command = new SynthesizeSpeechCommand({
         Text: content,
         OutputFormat: "mp3",
@@ -81,40 +89,48 @@ const ScreenReader: React.FC<ScreenReaderProps> = ({ content }) => {
         throw new Error("No audio stream received from Polly");
       }
 
-      // Create audio element if it doesn't exist
-      if (!audioRef.current) {
-        audioRef.current = new Audio();
-      }
-
-      // Convert the audio stream to a blob URL
       const audioBlob = new Blob(
         [await response.AudioStream.transformToByteArray()],
         { type: "audio/mpeg" }
       );
-      const audioUrl = URL.createObjectURL(audioBlob);
 
-      // Set up audio element
-      audioRef.current.src = audioUrl;
-      audioRef.current.onended = () => {
-        setIsReading(false);
+      if (isDownload) {
+        const url = URL.createObjectURL(audioBlob);
+        const link = document.createElement("a");
+        link.href = url;
+        const filename = `${title.toLowerCase().replace(/\s+/g, "-")}.mp3`;
+        link.download = filename;
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+        URL.revokeObjectURL(url);
+        setIsDownloading(false);
+      } else {
+        const audioUrl = URL.createObjectURL(audioBlob);
+        if (!audioRef.current) {
+          audioRef.current = new Audio();
+        }
+        audioRef.current.src = audioUrl;
+        audioRef.current.onended = () => {
+          setIsReading(false);
+          setIsLoading(false);
+        };
+        audioRef.current.onerror = (err) => {
+          console.error("Audio playback error:", err);
+          setError("Error playing audio");
+          setIsReading(false);
+          setIsLoading(false);
+        };
+        await audioRef.current.play();
+        setIsReading(true);
         setIsLoading(false);
-      };
-      audioRef.current.onerror = (err) => {
-        console.error("Audio playback error:", err);
-        setError("Error playing audio");
-        setIsReading(false);
-        setIsLoading(false);
-      };
-
-      // Play the audio
-      await audioRef.current.play();
-      setIsReading(true);
-      setIsLoading(false);
+      }
     } catch (error) {
-      console.error("Error synthesizing speech:", error);
-      setError("Failed to synthesize speech. Please try again.");
+      console.error("Error:", error);
+      setError("Failed to process audio. Please try again.");
       setIsReading(false);
       setIsLoading(false);
+      setIsDownloading(false);
     }
   };
 
@@ -125,8 +141,12 @@ const ScreenReader: React.FC<ScreenReaderProps> = ({ content }) => {
         setIsReading(false);
       }
     } else {
-      await synthesizeSpeech();
+      await synthesizeSpeech(false);
     }
+  };
+
+  const handleDownload = () => {
+    synthesizeSpeech(true);
   };
 
   // Cleanup on unmount
@@ -145,7 +165,7 @@ const ScreenReader: React.FC<ScreenReaderProps> = ({ content }) => {
         className="screen-reader-button"
         onClick={toggleReading}
         aria-label={isReading ? "Pause reading" : "Start reading"}
-        disabled={isLoading || !!error}
+        disabled={isLoading || isDownloading || !!error}
       >
         {isLoading ? (
           <i className="fas fa-spinner fa-spin"></i>
@@ -159,6 +179,18 @@ const ScreenReader: React.FC<ScreenReaderProps> = ({ content }) => {
             ? "Pause Reading"
             : "Start Reading"}
         </span>
+      </button>
+      <button
+        className="download-mp3-button"
+        onClick={handleDownload}
+        disabled={isLoading || isDownloading || !!error}
+      >
+        {isDownloading ? (
+          <i className="fas fa-spinner fa-spin"></i>
+        ) : (
+          <i className="fas fa-download"></i>
+        )}
+        <span>{isDownloading ? "Preparing MP3..." : "Download MP3"}</span>
       </button>
       {error && (
         <div className="screen-reader-error">

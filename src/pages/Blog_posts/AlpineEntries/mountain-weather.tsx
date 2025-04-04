@@ -45,7 +45,7 @@ const MountainWeather = () => {
       </section>
 
       <div className="article-content">
-        <ScreenReader content={content} />
+        <ScreenReader content={content} title="Mountain Weather" />
 
         <p>
           Understanding weather patterns in the Alpine region is crucial for

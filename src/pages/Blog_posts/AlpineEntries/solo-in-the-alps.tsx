@@ -28,7 +28,7 @@ const SoloInTheAlps = () => {
         </div>
       </section>
       <div className="article-content">
-        <ScreenReader content={content} />
+        <ScreenReader content={content} title="Solo in the Alps" />
         <p>
           Solo climbing in the Alps offers a unique experience of self-reliance
           and personal challenge. This article explores the mental and physical

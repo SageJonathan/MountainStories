@@ -4,7 +4,7 @@ export const travelArticles = [
     description:
       "A journey through the Swiss Alps, exploring hidden valleys and ancient mountain passes.",
     imageUrl: "/swiss-alps.webp",
-    link: "/blog/travel-stories/swiss-alps-adventure",
+    link: "/swiss-alps-adventure",
     location: {
       name: "Swiss Alps, Switzerland",
       latitude: 46.8182,
@@ -16,7 +16,7 @@ export const travelArticles = [
     description:
       "Exploring the dramatic peaks and rich cultural heritage of the Italian Dolomites.",
     imageUrl: "/dolomites.webp",
-    link: "/blog/travel-stories/italian-dolomites",
+    link: "/italian-dolomites",
     location: {
       name: "Dolomites, Italy",
       latitude: 46.4102,
@@ -28,7 +28,7 @@ export const travelArticles = [
     description:
       "A trek through the French Pyrenees, discovering remote villages and stunning landscapes.",
     imageUrl: "/pyrenees.webp",
-    link: "/blog/travel-stories/french-pyrenees",
+    link: "/french-pyrenees",
     location: {
       name: "French Pyrenees, France",
       latitude: 42.8333,

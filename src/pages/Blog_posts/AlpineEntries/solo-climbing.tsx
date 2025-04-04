@@ -32,7 +32,7 @@ const SoloClimbing = () => {
       </section>
 
       <div className="article-content">
-        <ScreenReader content={content} />
+        <ScreenReader content={content} title="Solo Climbing" />
 
         <p>
           Solo climbing represents the purest form of mountaineering, where the

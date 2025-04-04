@@ -32,7 +32,7 @@ const WeatherPatterns = () => {
       </section>
 
       <div className="article-content">
-        <ScreenReader content={content} />
+        <ScreenReader content={content} title="Weather Patterns" />
 
         <p>
           The Alps present unique weather challenges that every mountaineer must

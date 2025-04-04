@@ -32,7 +32,7 @@ const FirstAscent = () => {
       </section>
 
       <div className="article-content">
-        <ScreenReader content={content} />
+        <ScreenReader content={content} title="First Ascent" />
 
         <p>
           The Matterhorn's North Face presents one of the most challenging and

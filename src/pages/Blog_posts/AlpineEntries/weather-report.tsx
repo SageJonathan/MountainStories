@@ -28,7 +28,7 @@ const WeatherReport = () => {
         </div>
       </section>
       <div className="article-content">
-        <ScreenReader content={content} />
+        <ScreenReader content={content} title="Weather Report" />
         <p>
           Weather in the high Alps can change rapidly, presenting unique
           challenges for climbers and hikers. Understanding these patterns is

@@ -35,7 +35,7 @@ const SwissAlpsAdventure = () => {
       </section>
 
       <div className="article-content">
-        <ScreenReader content={content} />
+        <ScreenReader content={content} title="Swiss Alps Adventure" />
 
         <p>
           The Swiss Alps present some of the most spectacular mountain
