@@ -1,5 +1,14 @@
 import ScreenReader from "../../../components/ScreenReader";
 
+import dharma1 from "../../../assets/travel/dharma/Dharma1.webp"
+import dharma2 from "../../../assets/travel/dharma/Dharma2.webp"
+import dharma3 from "../../../assets/travel/dharma/Dharma3.webp"
+import dharma4 from "../../../assets/travel/dharma/Dharma4.webp"
+import dharma5 from "../../../assets/travel/dharma/Dharma5.webp"
+import dharma6 from "../../../assets/travel/dharma/Dharma6.webp"
+import dharma7 from "../../../assets/travel/dharma/Dharma7.webp"
+
+
 const Dharma = () => {
   const content = `
     It was Carnival when I entered the country of Suriname. The broad streets laid empty where I had been dropped by the bus from Guyana. A strange thing considering the celebrations- which I only learned of later that night. I suppose everyone was busy getting ready for the annual debauchery. In hindsight, it definitely made my way across the city easier. What normally takes a meager five-minute commute to a store can scale up to half an hour of a dazing push and shove game across bodies and puddles. So, blessed then, I heaved my bag over my shoulders and wandered towards a group of old ladies; chatting by a patio facing the silent streets. I asked them where one could find cheap accommodation. Around these parts that means a carbé, a shared space where you put up your own hammock; usually with a kitchen, and sometimes a shower. Deciphering through their créole of Hindi, English, and Dutch- aided by the universal sings of body language- they turned me on towards a boulevard where I could find a family-run carbé. I was obliged and gave them thanks by answering some questions they had about me. Then I was off. It didn’t take much time to find, as there isn’t much around, even in this, the capital, Paramaribo. So, after a lengthy stroll, I found Un Pied-À-Terre, where I draped my hammock by the wooden pillars and took a breath to ease into the new country. 
@@ -180,7 +189,7 @@ Wherein I pine the brazen fires
         </p>
 
         <div className="article-image">
-          <img src={cerb5} alt="Cerberus" />
+          <img src={dharma1} alt="Cerberus" />
           <p className="image-caption">Nat in the approach couloir</p>
         </div>
 
@@ -274,7 +283,7 @@ Wherein I pine the brazen fires
           down to come around the table, where amid fraternal eyes we met.
         </p>
         <div className="article-image">
-          <img src={cerb5} alt="Cerberus" />
+            <img src={dharma2} alt="Dharma" />
           <p className="image-caption">Nat in the approach couloir</p>
         </div>
 
@@ -297,7 +306,7 @@ Wherein I pine the brazen fires
         </p>
 
         <div className="article-image">
-          <img src={cerb5} alt="Cerberus" />
+              <img src={dharma3} alt="Dharma" />
           <p className="image-caption">Nat in the approach couloir</p>
         </div>
 
@@ -423,7 +432,7 @@ Wherein I pine the brazen fires
         </p>
 
         <div className="article-image">
-          <img src={cerb5} alt="Cerberus" />
+          <img src={dharma4} alt="Dharma" />
           <p className="image-caption">Nat in the approach couloir</p>
         </div>
 
@@ -476,7 +485,7 @@ Wherein I pine the brazen fires
         </p>
 
         <div className="article-image">
-          <img src={cerb5} alt="Cerberus" />
+          <img src={dharma5} alt="Dharma" />
           <p className="image-caption">Nat in the approach couloir</p>
         </div>
 
@@ -531,7 +540,7 @@ Wherein I pine the brazen fires
         </p>
 
         <div className="article-image">
-          <img src={cerb5} alt="Cerberus" />
+          <img src={dharma6} alt="Dharma" />
           <p className="image-caption">Nat in the approach couloir</p>
         </div>
 
@@ -605,7 +614,7 @@ Wherein I pine the brazen fires
         </p>
 
         <div className="article-image">
-          <img src={cerb5} alt="Cerberus" />
+          <img src={dharma7} alt="Dharma" />
           <p className="image-caption">Nat in the approach couloir</p>
         </div>
 
