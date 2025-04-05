@@ -1,61 +1,37 @@
-
+import React from "react";
 import { Link } from "react-router-dom";
 import GlobeScene from "../components/GlobeScene";
+import { poems } from "./Poems/poems";
+import { alpineArticles } from "../content_data/alpineArticles/alpineArticles";
+import { travelArticles } from "../content_data/travelArticles/travelArticles";
 
-const Home = () => {
-  const locations = [
-    // Poems
-    {
-      name: "Matterhorn, Zermatt, Switzerland",
-      latitude: 45.9766,
-      longitude: 7.6586,
-      type: "poem" as const,
-    },
-    {
-      name: "Eiger North Face, Grindelwald, Switzerland",
-      latitude: 46.5778,
-      longitude: 8.0053,
-      type: "poem" as const,
-    },
-    // Travel Stories
-    {
-      name: "Annapurna Circuit, Nepal",
-      latitude: 28.5964,
-      longitude: 83.8203,
-      type: "travel" as const,
-    },
-    {
-      name: "Chamonix to Zermatt, Swiss Alps",
-      latitude: 46.0207,
-      longitude: 7.7491,
-      type: "travel" as const,
-    },
-    {
-      name: "Torres del Paine, Chile",
-      latitude: -50.9423,
-      longitude: -73.4068,
-      type: "travel" as const,
-    },
-    // Alpine Journal
-    {
-      name: "Matterhorn, Zermatt, Switzerland",
-      latitude: 45.9766,
-      longitude: 7.6586,
-      type: "alpine" as const,
-    },
-    {
-      name: "Alpine region, Europe",
-      latitude: 46.2276,
-      longitude: 6.1432,
-      type: "alpine" as const,
-    },
-    {
-      name: "European Alps",
-      latitude: 46.2276,
-      longitude: 6.1432,
-      type: "alpine" as const,
-    },
-  ];
+const Home: React.FC = () => {
+  // Extract locations from poems
+  const poemLocations = poems.map((poem) => ({
+    name: poem.location.name,
+    latitude: poem.location.latitude,
+    longitude: poem.location.longitude,
+    type: "poem" as const,
+  }));
+
+  // Extract locations from alpine articles
+  const alpineLocations = alpineArticles.map((article) => ({
+    name: article.location.name,
+    latitude: article.location.latitude,
+    longitude: article.location.longitude,
+    type: "alpine" as const,
+  }));
+
+  // Extract locations from travel articles
+  const travelLocations = travelArticles.map((article) => ({
+    name: article.location.name,
+    latitude: article.location.latitude,
+    longitude: article.location.longitude,
+    type: "travel" as const,
+  }));
+
+  // Combine all locations
+  const locations = [...poemLocations, ...alpineLocations, ...travelLocations];
 
   return (
     <div className="home">
@@ -85,7 +61,7 @@ const Home = () => {
             <Link to="/poetry" className="card poetry">
               <div className="card-content">
                 <h3>Poetry</h3>
-                <p>Words inspired by the peaks</p>
+                <p>Poetic journeys through nature</p>
                 <i className="fas fa-feather-alt card-icon"></i>
               </div>
             </Link>
