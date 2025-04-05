@@ -89,7 +89,7 @@ The whole adventure certainly took us longer than we had expected, but we are al
         </p>
 
         <div className="article-image">
-          <img src={man1} alt="Berg Slawinski" />
+          <img src={man1} alt="Berg Slawinski" loading="lazy" />
           <p className="image-caption">
             The route is the obvious gash in the center.
           </p>
@@ -107,7 +107,7 @@ The whole adventure certainly took us longer than we had expected, but we are al
         </p>
 
         <div className="article-image">
-          <img src={man2} alt="Berg Slawinski" />
+          <img src={man2} alt="Berg Slawinski" loading="lazy" />
           <p className="image-caption">Final approach to the climb. Deep!</p>
         </div>
 
@@ -127,7 +127,7 @@ The whole adventure certainly took us longer than we had expected, but we are al
         </p>
 
         <div className="article-image">
-          <img src={man3} alt="Berg Slawinski" />
+          <img src={man3} alt="Berg Slawinski" loading="lazy" />
           <p className="image-caption">
             Start of the route. Nat belaying John.
           </p>
@@ -146,7 +146,7 @@ The whole adventure certainly took us longer than we had expected, but we are al
         </p>
 
         <div className="article-image">
-          <img src={man4} alt="Berg Slawinski" />
+          <img src={man4} alt="Berg Slawinski" loading="lazy" />
           <p className="image-caption">
             Nat past the difficulties of P2. Looking from the anchor
           </p>
@@ -168,7 +168,7 @@ The whole adventure certainly took us longer than we had expected, but we are al
         </p>
 
         <div className="article-image">
-          <img src={man5} alt="Berg Slawinski" />
+          <img src={man5} alt="Berg Slawinski" loading="lazy" />
           <p className="image-caption">John leading the start of P3.</p>
         </div>
 
@@ -187,7 +187,7 @@ The whole adventure certainly took us longer than we had expected, but we are al
         </p>
 
         <div className="article-image">
-          <img src={man6} alt="Berg Slawinski" />
+          <img src={man6} alt="Berg Slawinski" loading="lazy" />
           <p className="image-caption">Ripley begining the off-width</p>
         </div>
 
@@ -202,7 +202,7 @@ The whole adventure certainly took us longer than we had expected, but we are al
         </p>
 
         <div className="article-image">
-          <img src={man7} alt="Berg Slawinski" />
+          <img src={man7} alt="Berg Slawinski" loading="lazy" />
           <p className="image-caption">Ripley leaves the ancohor towards P4.</p>
         </div>
 
@@ -222,7 +222,7 @@ The whole adventure certainly took us longer than we had expected, but we are al
         </p>
 
         <div className="article-image">
-          <img src={man8} alt="Berg Slawinski" />
+          <img src={man8} alt="Berg Slawinski" loading="lazy" />
           <p className="image-caption">Nat setting off into P6.</p>
         </div>
 
@@ -237,7 +237,7 @@ The whole adventure certainly took us longer than we had expected, but we are al
         </p>
 
         <div className="article-image">
-          <img src={man9} alt="Berg Slawinski" />
+          <img src={man9} alt="Berg Slawinski" loading="lazy" />
           <p className="image-caption">
             Nat belaying. John coming through the cornice.
           </p>
@@ -301,7 +301,7 @@ The whole adventure certainly took us longer than we had expected, but we are al
         </p>
 
         <div className="article-image">
-          <img src={man10} alt="Solo Climbing" />
+          <img src={man10} alt="Solo Climbing" loading="lazy" />
           <p className="image-caption">L to R: John, Ripley, Nat.</p>
         </div>
       </div>

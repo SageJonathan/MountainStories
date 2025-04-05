@@ -189,7 +189,7 @@ Wherein I pine the brazen fires
         </p>
 
         <div className="article-image">
-          <img src={dharma1} alt="Cerberus" />
+          <img src={dharma1} alt="Cerberus" loading="lazy" />
           <p className="image-caption">Suriname martime border</p>
         </div>
 
@@ -283,7 +283,7 @@ Wherein I pine the brazen fires
           down to come around the table, where amid fraternal eyes we met.
         </p>
         <div className="article-image">
-          <img src={dharma2} alt="Dharma" />
+          <img src={dharma2} alt="Dharma" loading="lazy" />
           <p className="image-caption">Typical day out with the bicycle</p>
         </div>
 
@@ -306,7 +306,7 @@ Wherein I pine the brazen fires
         </p>
 
         <div className="article-image">
-          <img src={dharma3} alt="Dharma" />
+          <img src={dharma3} alt="Dharma" loading="lazy" />
           <p className="image-caption">Hitching eastwards, beer and all</p>
         </div>
 
@@ -432,7 +432,7 @@ Wherein I pine the brazen fires
         </p>
 
         <div className="article-image">
-          <img src={dharma4} alt="Dharma" />
+          <img src={dharma4} alt="Dharma" loading="lazy" />
           <p className="image-caption">Afternoon at the ranch</p>
         </div>
 
@@ -485,7 +485,7 @@ Wherein I pine the brazen fires
         </p>
 
         <div className="article-image">
-          <img src={dharma5} alt="Dharma" />
+          <img src={dharma5} alt="Dharma" loading="lazy" />
           <p className="image-caption">Bullet ant diagram</p>
         </div>
 
@@ -540,7 +540,7 @@ Wherein I pine the brazen fires
         </p>
 
         <div className="article-image">
-          <img src={dharma6} alt="Dharma" />
+          <img src={dharma6} alt="Dharma" loading="lazy" />
           <p className="image-caption">Afternoon run with the horses</p>
         </div>
 
@@ -614,7 +614,7 @@ Wherein I pine the brazen fires
         </p>
 
         <div className="article-image">
-          <img src={dharma7} alt="Dharma" />
+          <img src={dharma7} alt="Dharma" loading="lazy" />
           <p className="image-caption">Approaching the Brazilian border</p>
         </div>
 

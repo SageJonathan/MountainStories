@@ -340,7 +340,7 @@ Alone again, for the first time since that last swinging rest by horses under my
         </p>
 
         <div className="article-image">
-          <img src={br1} alt="Br-156" />
+          <img src={br1} alt="Br-156" loading="lazy" />
           <p className="image-caption">The bus is stuck in the mud</p>
         </div>
 
@@ -379,7 +379,7 @@ Alone again, for the first time since that last swinging rest by horses under my
         </p>
 
         <div className="article-image">
-          <img src={br2} alt="Br-156" />
+          <img src={br2} alt="Br-156" loading="lazy" />
           <p className="image-caption">The bus is stuck in the mud, again.</p>
         </div>
 
@@ -544,7 +544,7 @@ Alone again, for the first time since that last swinging rest by horses under my
         </p>
 
         <div className="article-image">
-          <img src={br3} alt="Br-156" />
+          <img src={br3} alt="Br-156" loading="lazy" />
           <p className="image-caption">View fom the truck bed, looking back.</p>
         </div>
 
@@ -577,8 +577,8 @@ Alone again, for the first time since that last swinging rest by horses under my
         </p>
 
         <div className="article-image">
-          <img src={br4} alt="Br-156" />
-      <p className="image-caption">Waiting to pass. The police is stuck, getting winched by a truck.</p>
+          <img src={br4} alt="Br-156" loading="lazy" />
+          <p className="image-caption">Waiting to pass. The police is stuck, getting winched by a truck.</p>
         </div>
 
         <p>

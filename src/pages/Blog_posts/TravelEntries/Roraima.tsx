@@ -130,7 +130,7 @@ The few remaining streaks of light faded as we left the savanna and entered the 
           and haggled a seat in a cramped minivan with more people than seats.
         </p>
         <div className="article-image">
-          <img src={roraima1} alt="Roraima" />
+          <img src={roraima1} alt="Roraima" loading="lazy" />
           <p className="image-caption">
             Myself (middle) and my hosts in Georgetown.
           </p>
@@ -177,7 +177,7 @@ The few remaining streaks of light faded as we left the savanna and entered the 
           transit before Venezuela. I hopped on and paid the fare.
         </p>
         <div className="article-image">
-          <img src={roraima3} alt="Roraima" />
+          <img src={roraima3} alt="Roraima" loading="lazy" />
           <p className="image-caption">
             Atop the mountain with my benefactor who is wielding a machete.
           </p>
@@ -253,7 +253,7 @@ The few remaining streaks of light faded as we left the savanna and entered the 
           and out, meriting my voyage to the sacred plateau. The deal was on.
         </p>
         <div className="article-image">
-          <img src={roraima4} alt="Roraima" />
+          <img src={roraima4} alt="Roraima" loading="lazy"/>
           <p className="image-caption">Brazil - Venezuela Border.</p>
         </div>
         <p>
@@ -285,7 +285,7 @@ The few remaining streaks of light faded as we left the savanna and entered the 
           for the mountain grew.
         </p>
         <div className="article-image">
-          <img src={roraima5} alt="Roraima" />
+          <img src={roraima5} alt="Roraima"loading="lazy" />
           <p className="image-caption">
             Vago & I beginning the digging for the septic tank
           </p>
@@ -347,7 +347,7 @@ The few remaining streaks of light faded as we left the savanna and entered the 
           everyone was looking for me in the morning. O well.
         </p>
         <div className="article-image">
-          <img src={roraima6} alt="Roraima" />
+          <img src={roraima6} alt="Roraima" loading="lazy"/>
           <p className="image-caption">Village in the distance.</p>
         </div>
         <p>
@@ -385,11 +385,11 @@ The few remaining streaks of light faded as we left the savanna and entered the 
           where permits were officialized, things checked, and rules were given.
         </p>
         <div className="article-image">
-          <img src={roraima7} alt="Roraima" />
+          <img src={roraima7} alt="Roraima" loading="lazy" />
           <p className="image-caption">Paraitepuy. Roraima in the distance.</p>
         </div>
         <div className="article-image">
-          <img src={roraima8} alt="Roraima" />
+          <img src={roraima8} alt="Roraima" loading="lazy" />
           <p className="image-caption">Camp #1</p>
         </div>
         <p>
@@ -401,7 +401,7 @@ The few remaining streaks of light faded as we left the savanna and entered the 
           themselves visible to us. I slept well that night.{" "}
         </p>
         <div className="article-image">
-          <img src={roraima9} alt="Roraima" />
+          <img src={roraima9} alt="Roraima" loading="lazy"/>
           <p className="image-caption">Camp #2</p>
         </div>
         '
@@ -431,7 +431,7 @@ The few remaining streaks of light faded as we left the savanna and entered the 
           discovering its splendors, and of course, shitting in bags.
         </p>
         <div className="article-image">
-          <img src={roraima10} alt="Roraima" />
+          <img src={roraima10} alt="Roraima" loading="lazy" />
           <p className="image-caption">Summit camp. Sheltered in a cave</p>
         </div>
         '
@@ -449,7 +449,7 @@ The few remaining streaks of light faded as we left the savanna and entered the 
           view to the past that our ancestors knew.
         </p>
         <div className="article-image">
-          <img src={roraima11} alt="Roraima" />
+          <img src={roraima11} alt="Roraima" loading="lazy"/>
           <p className="image-caption">
             Myself, enjoying a mid-day ‘‘Clearing’’.
           </p>
@@ -467,7 +467,7 @@ The few remaining streaks of light faded as we left the savanna and entered the 
           friendship.
         </p>
         <div className="article-image">
-          <img src={roraima12} alt="Roraima" />
+          <img src={roraima12} alt="Roraima" loading="lazy"/>
           <p className="image-caption">Navigating the plateau.</p>
         </div>
         '
@@ -492,7 +492,7 @@ The few remaining streaks of light faded as we left the savanna and entered the 
           laughing hard-and free.
         </p>
         <div className="article-image">
-          <img src={roraima13} alt="Roraima" />
+          <img src={roraima13} alt="Roraima" loading="lazy"/>
           <p className="image-caption">Rodeo event in Lethem.</p>
         </div>
         '
@@ -511,7 +511,7 @@ The few remaining streaks of light faded as we left the savanna and entered the 
           just fine. So that’s just what we did.
         </p>
         <div className="article-image">
-          <img src={roraima14} alt="Roraima" />
+          <img src={roraima14} alt="Roraima" loading="lazy"/>
           <p className="image-caption">Hitching and praying</p>
         </div>
         '

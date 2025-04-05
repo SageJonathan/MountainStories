@@ -58,7 +58,7 @@ We drove back to the hostel for a proper nighttime breakfast and a blazing sauna
         </p>
 
         <div className="article-image">
-          <img src={cerb1} alt="Cerberus" />
+          <img src={cerb1} alt="Cerberus" loading="lazy" />
           <p className="image-caption">Myself, Ripley, Nat</p>
         </div>
 
@@ -76,14 +76,14 @@ We drove back to the hostel for a proper nighttime breakfast and a blazing sauna
         </p>
 
         <div className="article-image">
-          <img src={cerb2} alt="Cerberus" />
+          <img src={cerb2} alt="Cerberus" loading="lazy" />
           <p className="image-caption">
             Cellphone picture taken on the skitour
           </p>
         </div>
 
         <div className="article-image">
-          <img src={cerb3} alt="Cerberus" />
+          <img src={cerb3} alt="Cerberus" loading="lazy" />
           <p className="image-caption">Location of the climb</p>
         </div>
         <p>
@@ -100,12 +100,12 @@ We drove back to the hostel for a proper nighttime breakfast and a blazing sauna
         </p>
 
         <div className="article-image">
-          <img src={cerb4} alt="Cerberus" />
+          <img src={cerb4} alt="Cerberus" loading="lazy" />
           <p className="image-caption">Nat breaking trail in style</p>
         </div>
 
         <div className="article-image">
-          <img src={cerb5} alt="Cerberus" />
+          <img src={cerb5} alt="Cerberus" loading="lazy" />
           <p className="image-caption">Nat in the approach couloir</p>
         </div>
 
@@ -123,7 +123,7 @@ We drove back to the hostel for a proper nighttime breakfast and a blazing sauna
         </p>
 
         <div className="article-image">
-          <img src={cerb6} alt="Cerberus" />
+          <img src={cerb6} alt="Cerberus" loading="lazy" />
           <p className="image-caption">
             View of the central and right pillars. Viewed from left pillar
           </p>
