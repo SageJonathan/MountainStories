@@ -1,12 +1,11 @@
 import ScreenReader from "../../../components/ScreenReader";
 
-import cerb1 from "../../../assets/alpine/cerberus/Cerb1.webp"
-import cerb2 from "../../../assets/alpine/cerberus/Cerb2.webp"
-import cerb3 from "../../../assets/alpine/cerberus/Cerb3.webp"
-import cerb4 from "../../../assets/alpine/cerberus/Cerb4.webp"
-import cerb5 from "../../../assets/alpine/cerberus/Cerb5.webp"
-import cerb6 from "../../../assets/alpine/cerberus/Cerb6.webp"
-
+import cerb1 from "../../../assets/alpine/cerberus/Cerb1.webp";
+import cerb2 from "../../../assets/alpine/cerberus/Cerb2.webp";
+import cerb3 from "../../../assets/alpine/cerberus/Cerb3.webp";
+import cerb4 from "../../../assets/alpine/cerberus/Cerb4.webp";
+import cerb5 from "../../../assets/alpine/cerberus/Cerb5.webp";
+import cerb6 from "../../../assets/alpine/cerberus/Cerb6.webp";
 
 const Cerberus = () => {
   const content = `
@@ -58,12 +57,9 @@ We drove back to the hostel for a proper nighttime breakfast and a blazing sauna
         </p>
 
         <div className="article-image">
-          <img src={cerb1} alt="Cerberus" />      
-          <p className="image-caption">
-          Myself, Ripley, Nat
-          </p>
+          <img src={cerb1} alt="Cerberus" />
+          <p className="image-caption">Myself, Ripley, Nat</p>
         </div>
-
 
         <p>
           Nat hadn’t seen anything apart from some pictures I had taken a week
@@ -79,17 +75,15 @@ We drove back to the hostel for a proper nighttime breakfast and a blazing sauna
         </p>
 
         <div className="article-image">
-              <img src={cerb2} alt="Cerberus" />
+          <img src={cerb2} alt="Cerberus" />
           <p className="image-caption">
-          Cellphone picture taken on the skitour
+            Cellphone picture taken on the skitour
           </p>
         </div>
 
         <div className="article-image">
-                  <img src={cerb3} alt="Cerberus" />
-          <p className="image-caption">
-          Location of the climb
-          </p>
+          <img src={cerb3} alt="Cerberus" />
+          <p className="image-caption">Location of the climb</p>
         </div>
         <p>
           No sweat. We got up, sharpened our picks, ate some oats, and we were
@@ -106,16 +100,12 @@ We drove back to the hostel for a proper nighttime breakfast and a blazing sauna
 
         <div className="article-image">
           <img src={cerb4} alt="Cerberus" />
-          <p className="image-caption">
-          Nat breaking trail in style
-          </p>
+          <p className="image-caption">Nat breaking trail in style</p>
         </div>
 
         <div className="article-image">
           <img src={cerb5} alt="Cerberus" />
-          <p className="image-caption">
-          Nat in the approach couloir
-          </p>
+          <p className="image-caption">Nat in the approach couloir</p>
         </div>
 
         <p>
@@ -134,12 +124,11 @@ We drove back to the hostel for a proper nighttime breakfast and a blazing sauna
         <div className="article-image">
           <img src={cerb6} alt="Cerberus" />
           <p className="image-caption">
-          View of the central and right pillars. Viewed from left pillar
+            View of the central and right pillars. Viewed from left pillar
           </p>
         </div>
 
-
-        <p> 
+        <p>
           We drove back to the hostel for a proper nighttime breakfast and a
           blazing sauna. A good day out amongst friends. A memorable way to end
           a trip.

@@ -1,13 +1,12 @@
 import ScreenReader from "../../../components/ScreenReader";
 
-import dharma1 from "../../../assets/travel/dharma/Dharma1.webp"
-import dharma2 from "../../../assets/travel/dharma/Dharma2.webp"
-import dharma3 from "../../../assets/travel/dharma/Dharma3.webp"
-import dharma4 from "../../../assets/travel/dharma/Dharma4.webp"
-import dharma5 from "../../../assets/travel/dharma/Dharma5.webp"
-import dharma6 from "../../../assets/travel/dharma/Dharma6.webp"
-import dharma7 from "../../../assets/travel/dharma/Dharma7.webp"
-
+import dharma1 from "../../../assets/travel/dharma/Dharma1.webp";
+import dharma2 from "../../../assets/travel/dharma/Dharma2.webp";
+import dharma3 from "../../../assets/travel/dharma/Dharma3.webp";
+import dharma4 from "../../../assets/travel/dharma/Dharma4.webp";
+import dharma5 from "../../../assets/travel/dharma/Dharma5.webp";
+import dharma6 from "../../../assets/travel/dharma/Dharma6.webp";
+import dharma7 from "../../../assets/travel/dharma/Dharma7.webp";
 
 const Dharma = () => {
   const content = `
@@ -190,7 +189,7 @@ Wherein I pine the brazen fires
 
         <div className="article-image">
           <img src={dharma1} alt="Cerberus" />
-          <p className="image-caption">Nat in the approach couloir</p>
+          <p className="image-caption">Suriname martime border</p>
         </div>
 
         <p>
@@ -283,8 +282,8 @@ Wherein I pine the brazen fires
           down to come around the table, where amid fraternal eyes we met.
         </p>
         <div className="article-image">
-            <img src={dharma2} alt="Dharma" />
-          <p className="image-caption">Nat in the approach couloir</p>
+          <img src={dharma2} alt="Dharma" />
+          <p className="image-caption">Typical day out with the bicycle</p>
         </div>
 
         <p>
@@ -306,8 +305,8 @@ Wherein I pine the brazen fires
         </p>
 
         <div className="article-image">
-              <img src={dharma3} alt="Dharma" />
-          <p className="image-caption">Nat in the approach couloir</p>
+          <img src={dharma3} alt="Dharma" />
+          <p className="image-caption">Hitching eastwards, beer and all</p>
         </div>
 
         <p>
@@ -433,7 +432,7 @@ Wherein I pine the brazen fires
 
         <div className="article-image">
           <img src={dharma4} alt="Dharma" />
-          <p className="image-caption">Nat in the approach couloir</p>
+          <p className="image-caption">Afternoon at the ranch</p>
         </div>
 
         <p>
@@ -456,7 +455,7 @@ Wherein I pine the brazen fires
         <div className="quote-container">
           <p>
             “De ferme en ferme, erre le vagabond. De jardin en jardin, il mange
-            de ses mains, Noir de terre et de joie.
+            de ses mains, Noir de terre et de joie."
           </p>
           <p>— Written at the ranch</p>
         </div>
@@ -486,7 +485,7 @@ Wherein I pine the brazen fires
 
         <div className="article-image">
           <img src={dharma5} alt="Dharma" />
-          <p className="image-caption">Nat in the approach couloir</p>
+          <p className="image-caption">Bullet ant diagram</p>
         </div>
 
         <p>
@@ -541,7 +540,7 @@ Wherein I pine the brazen fires
 
         <div className="article-image">
           <img src={dharma6} alt="Dharma" />
-          <p className="image-caption">Nat in the approach couloir</p>
+          <p className="image-caption">Afternoon run with the horses</p>
         </div>
 
         <p>
@@ -564,7 +563,7 @@ Wherein I pine the brazen fires
           <p>
             “With a laugh and glee of eye The ambrosial path glistens -But to
             it, I pay no mind; And keep my sight to stars Of firing lustre
-            above.
+            above."{" "}
           </p>
           <p>— Written at the ranch</p>
         </div>
@@ -615,15 +614,15 @@ Wherein I pine the brazen fires
 
         <div className="article-image">
           <img src={dharma7} alt="Dharma" />
-          <p className="image-caption">Nat in the approach couloir</p>
+          <p className="image-caption">Approaching the Brazilian border</p>
         </div>
 
         <div className="quote-container">
           <p>
             {" "}
-            Heaven sinks beneath my feet, Where laid hitherto the stones of
+            "Heaven sinks beneath my feet, Where laid hitherto the stones of
             fate. So, roaming on clouds of gold, I raise my soft eyes to the
-            Zeniths’ yonder; Wherein I pine the brazen fires - Of Infinity.
+            Zeniths’ yonder; Wherein I pine the brazen fires - Of Infinity.""
           </p>
           <p>— Written at the ranch</p>
         </div>
