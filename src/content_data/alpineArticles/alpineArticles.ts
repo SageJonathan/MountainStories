@@ -30,7 +30,7 @@ export const alpineArticles = [
   {
     title: "FA: Cerberus",
     description:
-      "",
+      "Following a grueling 25-hour alpine push, Nat Walkom and I set out with skis and packs to establish a new route near Pulpit Peak",
     imageUrl: cerebrusCard ,
     link: "/cerberus",
     location: {
@@ -42,7 +42,7 @@ export const alpineArticles = [
   {
     title: "Yamnuska Whipper",
     description:
-      "",
+      " What started as a thrilling trad climb turned into a heart-stopping moment when I took a 30-foot fall after a chunk of choss gave way. ",
     imageUrl: yamnuskaCard,
     link: "/yamnuska-whipper",
     location: {

@@ -8,7 +8,7 @@ export const travelArticles = [
     description:
       "Traveling along BR-156 in Brazil, cutting through the heart of the Amazon rainforest and red clay landscapes.",
     imageUrl: br156Card,
-    link: "/br-156-red-earth-road",
+    link: "/red-earth",
     location: {
       name: "BR-156, Brazil",
       latitude: 1.5586,
@@ -20,7 +20,7 @@ export const travelArticles = [
     description:
       "A reflective journey into the heart of French Guiana's rainforests, blending solitude, nature, and spiritual insight in Matiti.",
     imageUrl: surinameCard,
-    link: "/french-guiana-dharma",
+    link: "/dharma",
     location: {
       name: "Matiti, French Guiana",
       latitude: 5.2827,
@@ -32,7 +32,7 @@ export const travelArticles = [
     description:
       "Climbing Mount Roraima, the legendary tabletop mountain at the tripoint of Venezuela, Brazil, and Guyana.",
     imageUrl: roraimaCard,
-    link: "/roraima-steps",
+    link: "/roraima",
     location: {
       name: "Mount Roraima, Brazil",
       latitude: 5.2270,

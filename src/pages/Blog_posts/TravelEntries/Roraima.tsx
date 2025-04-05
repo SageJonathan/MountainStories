@@ -1,9 +1,9 @@
 import React from "react";
 import ScreenReader from "../../../components/ScreenReader";
 
-const SwissAlpsAdventure = () => {
+const Roraima = () => {
   const content = `
-    Swiss Alps Adventure
+    Roraima
     Exploring Hidden Valleys and Ancient Mountain Passes
 
     The Swiss Alps present some of the most spectacular mountain landscapes in the world. Starting from the picturesque village of Zermatt, we follow ancient trade routes that have connected mountain communities for centuries. These paths wind through hidden valleys and over high mountain passes, offering breathtaking views of the surrounding peaks.
@@ -96,4 +96,4 @@ const SwissAlpsAdventure = () => {
   );
 };
 
-export default SwissAlpsAdventure;
+export default Roraima;

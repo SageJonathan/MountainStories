@@ -1,7 +1,7 @@
 import React from "react";
 import ScreenReader from "../../../components/ScreenReader";
 
-const FrenchPyrenees = () => {
+const RedEarth = () => {
   const content = `
     French Pyrenees
     A Trek Through Remote Villages and Stunning Landscapes
@@ -88,4 +88,4 @@ const FrenchPyrenees = () => {
   );
 };
 
-export default FrenchPyrenees;
+export default RedEarth;

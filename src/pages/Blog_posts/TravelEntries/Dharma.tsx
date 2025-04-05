@@ -1,7 +1,7 @@
 import React from "react";
 import ScreenReader from "../../../components/ScreenReader";
 
-const ItalianDolomites = () => {
+const Dharma = () => {
   const content = `
     Italian Dolomites
     Exploring the Dramatic Peaks and Rich Cultural Heritage
@@ -90,4 +90,4 @@ const ItalianDolomites = () => {
   );
 };
 
-export default ItalianDolomites;
+export default Dharma;
