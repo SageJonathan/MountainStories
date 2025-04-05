@@ -1,5 +1,6 @@
 import ScreenReader from "../../../components/ScreenReader";
 
+import roraimaCard from "../../../assets/travel/roraima/RoraimaCard.webp"
 import roraima1 from "../../../assets/travel/roraima/Roraima1.webp";
 import roraima2 from "../../../assets/travel/roraima/Roraima2.webp";
 import roraima3 from "../../../assets/travel/roraima/Roraima3.webp";
@@ -74,7 +75,7 @@ The few remaining streaks of light faded as we left the savanna and entered the 
 
   return (
     <div className="blog-post">
-      <section className="hero">
+      <section className="hero" style={{ backgroundImage: `url(${roraimaCard})` }}>
         <div className="hero-content">
           <h1>Roraima</h1>
           <div className="hero-text">

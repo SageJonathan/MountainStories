@@ -1,5 +1,6 @@
 import ScreenReader from "../../../components/ScreenReader";
 
+import dharmaCard from "../../../assets/travel/dharma/DharmaCard.webp";
 import dharma1 from "../../../assets/travel/dharma/Dharma1.webp";
 import dharma2 from "../../../assets/travel/dharma/Dharma2.webp";
 import dharma3 from "../../../assets/travel/dharma/Dharma3.webp";
@@ -74,7 +75,7 @@ Wherein I pine the brazen fires
 
   return (
     <div className="blog-post">
-      <section className="hero">
+      <section className="hero" style={{ backgroundImage: `url(${dharmaCard})` }}>
         <div className="hero-content">
           <h1>Drunk on Dharma</h1>
           <div className="hero-text">

@@ -1,5 +1,6 @@
 import ScreenReader from "../../../components/ScreenReader";
 
+import brcard from "../../../assets/travel/br/BRCard.webp"
 import br1 from "../../../assets/travel/br/Br1.webp"
 import br2 from "../../../assets/travel/br/Br2.webp"
 import br3 from "../../../assets/travel/br/Br3.webp"
@@ -101,7 +102,7 @@ Alone again, for the first time since that last swinging rest by horses under my
 
   return (
     <div className="blog-post">
-      <section className="hero">
+<section className="hero" style={{ backgroundImage: `url(${brcard})` }}>
         <div className="hero-content">
           <h1>Red Earth Road</h1>
           <div className="hero-text">
