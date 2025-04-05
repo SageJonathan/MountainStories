@@ -1,5 +1,23 @@
 import ScreenReader from "../../../components/ScreenReader";
 
+import roraima1 from "../../../assets/travel/roraima/Roraima1.webp"
+import roraima2 from "../../../assets/travel/roraima/Roraima2.webp"
+import roraima3 from "../../../assets/travel/roraima/Roraima3.webp"
+import roraima4 from "../../../assets/travel/roraima/Roraima4.webp"
+import roraima5 from "../../../assets/travel/roraima/Roraima5.webp"
+import roraima6 from "../../../assets/travel/roraima/Roraima6.webp"  
+import roraima7 from "../../../assets/travel/roraima/Roraima7.webp"
+import roraima8 from "../../../assets/travel/roraima/Roraima8.webp"
+import roraima9 from "../../../assets/travel/roraima/Roraima9.webp"
+import roraima10 from "../../../assets/travel/roraima/Roraima10.webp"
+import roraima11 from "../../../assets/travel/roraima/Roraima11.webp"
+import roraima12 from "../../../assets/travel/roraima/Roraima12.webp"
+import roraima13 from "../../../assets/travel/roraima/Roraima13.webp"
+import roraima14 from "../../../assets/travel/roraima/Roraima14.webp"
+
+
+
+
 const Roraima = () => {
   const content = `
     I had been living in the Amazon basin for enough time now to think of elsewhere. That’s what happens when your so-called Zen-mind is besieged by photographs of remote peaks. Easy prey really. Only a year before my arrival in the Peruvian district of Loreto, with a mind full of nervous ambition, petty (but genuine) attempts at shamanism; recollections of Anacondas and massive amounts of vomit, and now, having worked in animal rescue and very far from the comforts of Mexican taquerias and drunk poets; which I had left begrudgingly for a so-called revealed path in medicine (intersected by a few months of living from a tent on the Magdalene islands; hidden under prickly conifers so that the bulls I was sharing the land with wouldn’t rummage through my meager possessions-or lay and kill me; just so as to be working out a kitchen which offered, besides the savings I needed, showers and sustenance – also abuse and other kitchen truisms), now my mind was off on a tangent again. This time to the Sacred elevated plateau of Roraima. A 2,810m, 31 squared kilometer summit with clouds breaming bellow- as if pouring from its hidden creeks. A sacred mountain indeed, rising as a plateau from level ground to all sides, precisely where three countries meet (Venezuela, Brazil, Guyana). Now my problem was how to get there. How I would climb it would be a problem for future me.
@@ -114,7 +132,7 @@ The few remaining streaks of light faded as we left the savanna and entered the 
           and haggled a seat in a cramped minivan with more people than seats.
         </p>
         <div className="article-image">
-          <img src={br4} alt="Dharma" />
+          <img src={roraima1} alt="Dharma" />
           <p className="image-caption">
             Waiting to pass. The police is stuck, getting winched by a truck.
           </p>
@@ -136,7 +154,7 @@ The few remaining streaks of light faded as we left the savanna and entered the 
           arrived at a hut- the final stop.
         </p>
         <div className="article-image">
-          <img src={br4} alt="Dharma" />
+          <img src={roraima2} alt="Dharma" />
           <p className="image-caption">
             Waiting to pass. The police is stuck, getting winched by a truck.
           </p>
@@ -161,7 +179,7 @@ The few remaining streaks of light faded as we left the savanna and entered the 
           transit before Venezuela. I hopped on and paid the fare.
         </p>
         <div className="article-image">
-          <img src={br4} alt="Dharma" />
+          <img src={roraima3} alt="Dharma" />
           <p className="image-caption">
             Waiting to pass. The police is stuck, getting winched by a truck.
           </p>
@@ -237,7 +255,7 @@ The few remaining streaks of light faded as we left the savanna and entered the 
           and out, meriting my voyage to the sacred plateau. The deal was on.
         </p>
         <div className="article-image">
-          <img src={br4} alt="Dharma" />
+          <img src={roraima4} alt="Dharma" />
           <p className="image-caption">
             Waiting to pass. The police is stuck, getting winched by a truck.
           </p>
@@ -271,7 +289,7 @@ The few remaining streaks of light faded as we left the savanna and entered the 
           for the mountain grew.
         </p>
         <div className="article-image">
-          <img src={br4} alt="Dharma" />
+          <img src={roraima5} alt="Dharma" />
           <p className="image-caption">
             Waiting to pass. The police is stuck, getting winched by a truck.
           </p>
@@ -333,7 +351,7 @@ The few remaining streaks of light faded as we left the savanna and entered the 
           everyone was looking for me in the morning. O well.
         </p>
         <div className="article-image">
-          <img src={br4} alt="Dharma" />
+          <img src={roraima6} alt="Dharma" />
           <p className="image-caption">
             Waiting to pass. The police is stuck, getting winched by a truck.
           </p>
@@ -373,13 +391,13 @@ The few remaining streaks of light faded as we left the savanna and entered the 
           where permits were officialized, things checked, and rules were given.
         </p>
         <div className="article-image">
-          <img src={br4} alt="Dharma" />
+          <img src={roraima7} alt="Dharma" />
           <p className="image-caption">
             Waiting to pass. The police is stuck, getting winched by a truck.
           </p>
         </div>
         <div className="article-image">
-          <img src={br4} alt="Dharma" />
+          <img src={roraima8} alt="Dharma" />
           <p className="image-caption">
             Waiting to pass. The police is stuck, getting winched by a truck.
           </p>
@@ -393,7 +411,7 @@ The few remaining streaks of light faded as we left the savanna and entered the 
           themselves visible to us. I slept well that night.{" "}
         </p>
         <div className="article-image">
-          <img src={br4} alt="Dharma" />
+          <img src={roraima9} alt="Dharma" />
           <p className="image-caption">
             Waiting to pass. The police is stuck, getting winched by a truck.
           </p>
@@ -425,7 +443,7 @@ The few remaining streaks of light faded as we left the savanna and entered the 
           discovering its splendors, and of course, shitting in bags.
         </p>
         <div className="article-image">
-          <img src={br4} alt="Dharma" />
+          <img src={roraima10} alt="Dharma" />
           <p className="image-caption">
             Waiting to pass. The police is stuck, getting winched by a truck.
           </p>
@@ -445,7 +463,7 @@ The few remaining streaks of light faded as we left the savanna and entered the 
           view to the past that our ancestors knew.
         </p>
         <div className="article-image">
-          <img src={br4} alt="Dharma" />
+          <img src={roraima11} alt="Dharma" />
           <p className="image-caption">
             Waiting to pass. The police is stuck, getting winched by a truck.
           </p>
@@ -463,7 +481,7 @@ The few remaining streaks of light faded as we left the savanna and entered the 
           friendship.
         </p>
         <div className="article-image">
-          <img src={br4} alt="Dharma" />
+          <img src={roraima12} alt="Dharma" />
           <p className="image-caption">
             Waiting to pass. The police is stuck, getting winched by a truck.
           </p>
@@ -490,7 +508,7 @@ The few remaining streaks of light faded as we left the savanna and entered the 
           laughing hard-and free.
         </p>
         <div className="article-image">
-          <img src={br4} alt="Dharma" />
+          <img src={roraima13} alt="Dharma" />
           <p className="image-caption">
             Waiting to pass. The police is stuck, getting winched by a truck.
           </p>
@@ -511,7 +529,7 @@ The few remaining streaks of light faded as we left the savanna and entered the 
           just fine. So that’s just what we did.
         </p>
         <div className="article-image">
-          <img src={br4} alt="Dharma" />
+          <img src={roraima14} alt="Dharma" />
           <p className="image-caption">
             Waiting to pass. The police is stuck, getting winched by a truck.
           </p>
