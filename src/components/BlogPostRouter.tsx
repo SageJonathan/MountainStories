@@ -1,24 +1,23 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import FirstAscent from "../pages/Blog_posts/AlpineEntries/first-ascent";
-import MountainWeather from "../pages/Blog_posts/AlpineEntries/mountain-weather";
-import SoloInTheAlps from "../pages/Blog_posts/AlpineEntries/solo-in-the-alps";
-import SwissAlpsAdventure from "../pages/Blog_posts/TravelEntries/swiss-alps-adventure";
-import ItalianDolomites from "../pages/Blog_posts/TravelEntries/italian-dolomites";
-import FrenchPyrenees from "../pages/Blog_posts/TravelEntries/french-pyrenees";
-
+import BergSlawinski from "../pages/Blog_posts/AlpineEntries/BergSlawinski";
+import Cerberus from "../pages/Blog_posts/AlpineEntries/Cerberus";
+import Yamnuska from "../pages/Blog_posts/AlpineEntries/Yamnuska";
+import Roraima from "../pages/Blog_posts/TravelEntries/Roraima";
+import RedEarth from "../pages/Blog_posts/TravelEntries/RedEarth";
+import Dharma from "../pages/Blog_posts/TravelEntries/Dharma";
 const BlogPostRouter: React.FC = () => {
   return (
     <Routes>
       {/* Alpine Journal Routes */}
-      <Route path="/first-ascent" element={<FirstAscent />} />
-      <Route path="/mountain-weather" element={<MountainWeather />} />
-      <Route path="/solo-in-the-alps" element={<SoloInTheAlps />} />
+      <Route path="/berg-slawinski" element={<BergSlawinski />} />
+      <Route path="/cerberus" element={<Cerberus />} />
+      <Route path="/yamnuska-whipper" element={<Yamnuska />} />
 
       {/* Travel Stories Routes */}
-      <Route path="/swiss-alps-adventure" element={<SwissAlpsAdventure />} />
-      <Route path="/italian-dolomites" element={<ItalianDolomites />} />
-      <Route path="/french-pyrenees" element={<FrenchPyrenees />} />
+      <Route path="/red-earth" element={<RedEarth />} />
+      <Route path="/dharma" element={<Dharma />} />
+      <Route path="/roraima" element={<Roraima />} />
     </Routes>
   );
 };
