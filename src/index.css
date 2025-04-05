@@ -231,7 +231,7 @@ main {
 .hero {
   text-align: center;
   padding: 12rem 2rem;
-  background: url("/alpineBanner.webp");
+  /* background: url("/alpineBanner.webp"); */
   background-size: cover;
   background-position: center 30%;
   color: white;
@@ -317,6 +317,10 @@ main {
   background-position: center 30%;
 }
 
+.alpine-journal .hero {
+  background: url("/alpineBanner.webp");
+  background-position: center 40%;
+}
 .about .hero {
   background: linear-gradient(135deg, var(--secondary-color) 0%, #0a192f 100%);
   background-position: center;

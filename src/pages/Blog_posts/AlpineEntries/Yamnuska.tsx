@@ -1,12 +1,10 @@
 import ScreenReader from "../../../components/ScreenReader";
 
-import yam1 from "../../../assets/alpine/yamnuska/Yam1.webp"
-import yam2 from "../../../assets/alpine/yamnuska/Yam2.webp"
-import yam3 from "../../../assets/alpine/yamnuska/Yam3.webp"
-import yam4 from "../../../assets/alpine/yamnuska/Yam4.webp"
-import yam5 from "../../../assets/alpine/yamnuska/Yam5.webp"
-
-
+import yam1 from "../../../assets/alpine/yamnuska/Yam1.webp";
+import yam2 from "../../../assets/alpine/yamnuska/Yam2.webp";
+import yam3 from "../../../assets/alpine/yamnuska/Yam3.webp";
+import yam4 from "../../../assets/alpine/yamnuska/Yam4.webp";
+import yam5 from "../../../assets/alpine/yamnuska/Yam5.webp";
 
 const SoloInTheAlps = () => {
   const content = `
@@ -72,9 +70,7 @@ The route is named Yamabushi.
 
         <div className="article-image">
           <img src={yam1} alt="Yamnuska" />
-          <p className="image-caption">
-            Mt. Yamnuska
-          </p>
+          <p className="image-caption">Mt. Yamnuska</p>
         </div>
 
         <p>
@@ -116,9 +112,7 @@ The route is named Yamabushi.
 
         <div className="article-image">
           <img src={yam2} alt="Yamnuska" />
-          <p className="image-caption">
-          Looking down the route
-          </p>
+          <p className="image-caption">Looking down the route</p>
         </div>
 
         <p>
@@ -176,9 +170,7 @@ The route is named Yamabushi.
 
         <div className="article-image">
           <img src={yam3} alt="Yamnuska" />
-          <p className="image-caption">
-          A broken 0.5 link cam
-          </p>
+          <p className="image-caption">A broken 0.5 link cam</p>
         </div>
 
         <p>
@@ -229,12 +221,9 @@ The route is named Yamabushi.
           Saskatchewan and sees me off.
         </p>
 
-
         <div className="article-image">
           <img src={yam4} alt="Yamnuska" />
-          <p className="image-caption">
-            The good news is that im not dead. 
-          </p>
+          <p className="image-caption">The good news is that im not dead.</p>
         </div>
 
         <p>
@@ -259,9 +248,7 @@ The route is named Yamabushi.
 
         <div className="article-image">
           <img src={yam5} alt="Yamnuska" />
-          <p className="image-caption">
-          Looking back at the route
-          </p>
+          <p className="image-caption">Looking back at the route</p>
         </div>
 
         <h2>Postscript</h2>
