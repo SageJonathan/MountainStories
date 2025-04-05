@@ -1,5 +1,5 @@
 import ScreenReader from "../../../components/ScreenReader";
-
+import cerbCard from "../../../assets/alpine/cerberus/CerberusCard.webp";
 import cerb1 from "../../../assets/alpine/cerberus/Cerb1.webp";
 import cerb2 from "../../../assets/alpine/cerberus/Cerb2.webp";
 import cerb3 from "../../../assets/alpine/cerberus/Cerb3.webp";
@@ -32,7 +32,7 @@ We drove back to the hostel for a proper nighttime breakfast and a blazing sauna
 
   return (
     <div className="blog-post">
-      <section className="hero">
+<section className="hero" style={{ backgroundImage: `url(${cerbCard})` }}>
         <div className="hero-content">
           <h1>First Ascent: Cerberus</h1>
           <div className="hero-text">

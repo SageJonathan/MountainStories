@@ -1,5 +1,5 @@
 import ScreenReader from "../../../components/ScreenReader";
-
+import manCard from "../../../assets/alpine/manhole/ManholeCard.webp";
 import man1 from "../../../assets/alpine/manhole/Man1.webp";
 import man2 from "../../../assets/alpine/manhole/Man2.webp";
 import man3 from "../../../assets/alpine/manhole/Man3.webp";
@@ -58,7 +58,7 @@ The whole adventure certainly took us longer than we had expected, but we are al
 
   return (
     <div className="blog-post">
-      <section className="hero">
+      <section className="hero" style={{ backgroundImage: `url(${manCard})` }}>
         <div className="hero-content">
           <h1>Berg/Slawinski</h1>
           <div className="hero-text">

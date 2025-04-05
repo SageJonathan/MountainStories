@@ -1,5 +1,5 @@
 import ScreenReader from "../../../components/ScreenReader";
-
+import yamCard from "../../../assets/alpine/yamnuska/YamnuskaCard.webp";
 import yam1 from "../../../assets/alpine/yamnuska/Yam1.webp";
 import yam2 from "../../../assets/alpine/yamnuska/Yam2.webp";
 import yam3 from "../../../assets/alpine/yamnuska/Yam3.webp";
@@ -42,7 +42,7 @@ The route is named Yamabushi.
 
   return (
     <div className="blog-post">
-      <section className="hero">
+<section className="hero" style={{ backgroundImage: `url(${yamCard})` }}>
         <div className="hero-content">
           <h1>Yamnuska Whipper</h1>
           <div className="hero-text">
