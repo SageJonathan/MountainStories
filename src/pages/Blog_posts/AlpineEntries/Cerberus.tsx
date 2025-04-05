@@ -1,5 +1,13 @@
 import ScreenReader from "../../../components/ScreenReader";
 
+import cerb1 from "../../../assets/alpine/cerberus/Cerb1.webp"
+import cerb2 from "../../../assets/alpine/cerberus/Cerb2.webp"
+import cerb3 from "../../../assets/alpine/cerberus/Cerb3.webp"
+import cerb4 from "../../../assets/alpine/cerberus/Cerb4.webp"
+import cerb5 from "../../../assets/alpine/cerberus/Cerb5.webp"
+import cerb6 from "../../../assets/alpine/cerberus/Cerb6.webp"
+
+
 const Cerberus = () => {
   const content = `
     This last Saturday, Nat Walkom and I mustered our remaining energies from a 25h alpine push with Ripley Boulianne to go out on skis with a full pack; intending to establish a new route near Pulpit Peak, just north of Lake Louise. We were tired, but the allure of adventure was more enticing than an adequate recovery, especially with a cold snap in the forecast and the imminent arrival of my outbound flight. So, with a couple of hours of sleep, we shuffled gear between vans in the McDonald’s parking lot in Canmore, bid Ripley adieu, filled the tank- and were off. 
@@ -50,18 +58,12 @@ We drove back to the hostel for a proper nighttime breakfast and a blazing sauna
         </p>
 
         <div className="article-image">
-          <img src="/alpineBanner.webp" alt="Solo Climbing" />
+          <img src={cerb1} alt="Cerberus" />      
           <p className="image-caption">
-            The freedom and challenge of solo climbing in the Alps
+          Myself, Ripley, Nat
           </p>
         </div>
 
-        <div className="article-image">
-          <img src="/alpineBanner.webp" alt="Solo Climbing" />
-          <p className="image-caption">
-            The freedom and challenge of solo climbing in the Alps
-          </p>
-        </div>
 
         <p>
           Nat hadn’t seen anything apart from some pictures I had taken a week
@@ -77,16 +79,16 @@ We drove back to the hostel for a proper nighttime breakfast and a blazing sauna
         </p>
 
         <div className="article-image">
-          <img src="/alpineBanner.webp" alt="Solo Climbing" />
+              <img src={cerb2} alt="Cerberus" />
           <p className="image-caption">
-            The freedom and challenge of solo climbing in the Alps
+          Cellphone picture taken on the skitour
           </p>
         </div>
 
         <div className="article-image">
-          <img src="/alpineBanner.webp" alt="Solo Climbing" />
+                  <img src={cerb3} alt="Cerberus" />
           <p className="image-caption">
-            The freedom and challenge of solo climbing in the Alps
+          Location of the climb
           </p>
         </div>
         <p>
@@ -103,16 +105,16 @@ We drove back to the hostel for a proper nighttime breakfast and a blazing sauna
         </p>
 
         <div className="article-image">
-          <img src="/alpineBanner.webp" alt="Solo Climbing" />
+          <img src={cerb4} alt="Cerberus" />
           <p className="image-caption">
-            The freedom and challenge of solo climbing in the Alps
+          Nat breaking trail in style
           </p>
         </div>
 
         <div className="article-image">
-          <img src="/alpineBanner.webp" alt="Solo Climbing" />
+          <img src={cerb5} alt="Cerberus" />
           <p className="image-caption">
-            The freedom and challenge of solo climbing in the Alps
+          Nat in the approach couloir
           </p>
         </div>
 
@@ -130,20 +132,14 @@ We drove back to the hostel for a proper nighttime breakfast and a blazing sauna
         </p>
 
         <div className="article-image">
-          <img src="/alpineBanner.webp" alt="Solo Climbing" />
+          <img src={cerb6} alt="Cerberus" />
           <p className="image-caption">
-            The freedom and challenge of solo climbing in the Alps
+          View of the central and right pillars. Viewed from left pillar
           </p>
         </div>
 
-        <div className="article-image">
-          <img src="/alpineBanner.webp" alt="Solo Climbing" />
-          <p className="image-caption">
-            The freedom and challenge of solo climbing in the Alps
-          </p>
-        </div>
 
-        <p>
+        <p> 
           We drove back to the hostel for a proper nighttime breakfast and a
           blazing sauna. A good day out amongst friends. A memorable way to end
           a trip.
