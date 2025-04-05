@@ -1,31 +1,31 @@
 //Images Imports
-import redRocks from "../../assets/poems/RedRocks.webp"
-import septAns from "../../assets/poems/SeptAns.webp"
-import chantIntime from "../../assets/poems/ChantIntime.webp"
-import mariposas from "../../assets/poems/Mariposas.webp"
-import stillness from "../../assets/poems/Stillness.webp"
-import naissance from "../../assets/poems/Naissance.webp"
-import highWinds from "../../assets/poems/HighWinds.webp"
-import glace from "../../assets/poems/Glace.webp"
-import kluane from "../../assets/poems/Kluane.webp"
-import lesHirondelles from "../../assets/poems/LesHirondelles.webp"
-import espejos from "../../assets/poems/Espejos.webp"
-import leCadreHumain from "../../assets/poems/LeCadreHumain.webp"
-import lAmeImmortelle from "../../assets/poems/LAmeImmortelle.webp"
-import melancholia from "../../assets/poems/Melancholia.webp"
-import mortality from "../../assets/poems/Mortality.webp"
-import losLobos from "../../assets/poems/LosLobos.webp"
-import theSnow from "../../assets/poems/TheSnow.webp"
-import lAutomne from "../../assets/poems/LAutomne.webp"
-import mtAlberta from "../../assets/poems/MtAlberta.webp"
-import colombia from "../../assets/poems/Colombia.webp"
-import forestSong from "../../assets/poems/ForestSong.webp"
-import liberté from "../../assets/poems/Liberté.webp"
-import laRivière from "../../assets/poems/LaRivière.webp"
-import leTableau from "../../assets/poems/LeTableau.webp"
+import redRocks from "../../assets/poems/RedRocks.webp";
+import septAns from "../../assets/poems/SeptAns.webp";
+import chantIntime from "../../assets/poems/ChantIntime.webp";
+import mariposas from "../../assets/poems/Mariposas.webp";
+import stillness from "../../assets/poems/Stillness.webp";
+import naissance from "../../assets/poems/Naissance.webp";
+import highWinds from "../../assets/poems/HighWinds.webp";
+import glace from "../../assets/poems/Glace.webp";
+import kluane from "../../assets/poems/Kluane.webp";
+import lesHirondelles from "../../assets/poems/LesHirondelles.webp";
+import espejos from "../../assets/poems/Espejos.webp";
+import leCadreHumain from "../../assets/poems/LeCadreHumain.webp";
+import lAmeImmortelle from "../../assets/poems/LAmeImmortelle.webp";
+import melancholia from "../../assets/poems/Melancholia.webp";
+import mortality from "../../assets/poems/Mortality.webp";
+import losLobos from "../../assets/poems/LosLobos.webp";
+import theSnow from "../../assets/poems/TheSnow.webp";
+import lAutomne from "../../assets/poems/LAutomne.webp";
+import mtAlberta from "../../assets/poems/MtAlberta.webp";
+import colombia from "../../assets/poems/Colombia.webp";
+import forestSong from "../../assets/poems/ForestSong.webp";
+import liberté from "../../assets/poems/Liberté.webp";
+import laRivière from "../../assets/poems/LaRivière.webp";
+import leTableau from "../../assets/poems/LeTableau.webp";
 
 export const poems = [
-    // {
+  // {
   //   id: Template,
   //   title: "",
   //   content: ``,
@@ -56,8 +56,8 @@ export const poems = [
     imageAnnotation: "Climber negotiates a chimney on a rock route.",
     location: {
       name: "Red Rocks National Park, Nevada, USA.",
-      latitude: 45.9766,
-      longitude: 7.6586,
+      latitude: 36.0575,
+      longitude: -115.4281,
     },
   },
   {
@@ -91,15 +91,16 @@ export const poems = [
  Surgis une fleur bleuâtre fait de pierre
  - D'où coule une éternelle fontaine.`,
     image: septAns,
-    imageAnnotation: "Alpinist begins the traverse towards Taulliraju  East ridge.",
+    imageAnnotation:
+      "Alpinist begins the traverse towards Taulliraju  East ridge.",
     location: {
       name: "Huascaran National Park, Ancash, Peru.",
-      latitude: 46.5778,
-      longitude: 8.0053,
+      latitude: -9.1482,
+      longitude: -77.5289,
     },
   },
   {
-    id:  22 ,
+    id: 22,
     title: "Chant Intime",
     content: `Comme un chant intime, 
  Fragile- et jeune encore, 
@@ -116,9 +117,9 @@ export const poems = [
     image: chantIntime,
     imageAnnotation: "Climber crosses a handrail on Pigeon Spire.",
     location: {
-      name: "Bugaboo National Park, British Colombia, Canada.",
-      latitude: 46.5778,
-      longitude: 8.0053,
+      name: "Bugaboo National Park, British Columbia, Canada.",
+      latitude: 50.9119,
+      longitude: -115.845,
     },
   },
   {
@@ -131,15 +132,16 @@ Como aire en las ramas,
 También lloro la piel de mis fantasmas;
 Tan dulce y despididas.`,
     image: mariposas,
-    imageAnnotation: "Solo Ski-Mountaineer negotiates a gendarme in a no-fall zone. ",
+    imageAnnotation:
+      "Solo Ski-Mountaineer negotiates a gendarme in a no-fall zone. ",
     location: {
       name: "Mt. Hood, Hood National Forest, Oregon, USA.",
-      latitude: 46.5778,
-      longitude: 8.0053,
+      latitude: 45.3733,
+      longitude: -121.6954,
     },
   },
   {
-    id: 20  ,
+    id: 20,
     title: "Stillness",
     content: `Hush now…your mind is loud;
  Still among the valley and its eddies. 
@@ -147,11 +149,12 @@ Tan dulce y despididas.`,
  Still with the snow forming. 
  Do not think. The path is yet to be.`,
     image: stillness,
-    imageAnnotation: " A group of skiers settles into basecamp on the Colombia Icefield.",
+    imageAnnotation:
+      " A group of skiers settles into basecamp on the Colombia Icefield.",
     location: {
       name: "Jasper National Park, Alberta, Canada.",
-      latitude: 46.5778,
-      longitude: 8.0053,
+      latitude: 52.8734,
+      longitude: -118.0805,
     },
   },
   {
@@ -178,12 +181,12 @@ Mais cache en elle des plaisirs fantômes. `,
     imageAnnotation: "Two climbers approach the base of Huarapasca.",
     location: {
       name: "Cordillera Negra, Peru.",
-      latitude: 46.5778,
-      longitude: 8.0053,
+      latitude: -9.441,
+      longitude: -77.5378,
     },
   },
   {
-    id: 18  ,
+    id: 18,
     title: "High Winds",
     content: `There is a silence in the high winds
  Which deafens the voices within.
@@ -197,15 +200,16 @@ Which calls us forwards- an act of courage foretold.
 There is a voice in the high winds
 Who weighs our ideals, our deeds of merit.`,
     image: highWinds,
-    imageAnnotation: "Looking towards the Earth, mid-climb, on Murchison Falls. ",
+    imageAnnotation:
+      "Looking towards the Earth, mid-climb, on Murchison Falls. ",
     location: {
-      name: "Banff national park, Alberta, Canada.",
-      latitude: 46.5778,
-      longitude: 8.0053,
+      name: "Banff National Park, Alberta, Canada.",
+      latitude: 51.4968,
+      longitude: -115.9281,
     },
   },
   {
-    id:17 ,
+    id: 17,
     title: "Glace",
     content: `À travers la rivière; 
  Sur ce flanc de mont fier;
@@ -221,9 +225,9 @@ Ou les cils d’une fleur.`,
     image: glace,
     imageAnnotation: "Ice climber prepares to leave the belay on Curtain Call.",
     location: {
-      name: "Jasper national park, Alberta, Canada.",
-      latitude: 46.5778,
-      longitude: 8.0053,
+      name: "Jasper National Park, Alberta, Canada.",
+      latitude: 52.8734,
+      longitude: -118.0805,
     },
   },
   {
@@ -243,15 +247,16 @@ There, a forest dwells amid the scent of pine:
 Full-leafed and rich, like the gold pan’s hue;
 Nestled by the run of salmon wild.`,
     image: kluane,
-    imageAnnotation: "Kaskawulsh Glacier terminal, viewed from Observation mountain.",
+    imageAnnotation:
+      "Kaskawulsh Glacier terminal, viewed from Observation mountain.",
     location: {
-      name: " Kluane national preserve, Yukon, Canada.",
-      latitude: 46.5778,
-      longitude: 8.0053,
+      name: "Kluane National Preserve, Yukon, Canada.",
+      latitude: 60.5943,
+      longitude: -138.3587,
     },
-  }, 
+  },
   {
-    id: 15 ,
+    id: 15,
     title: "Les Hirondelles",
     content: `N’entendez-vous pas le clocher des hirondelles? 
  Ces alliées ailés annonçant le baptême continuel de l’être.
@@ -260,15 +265,16 @@ Nestled by the run of salmon wild.`,
 Nous pour qui nos racines sont des fleurs. 
  Des ruisseaux anciens pleins de futures.`,
     image: lesHirondelles,
-    imageAnnotation: "Climber enters a loose section, high on the North Face of Mount Temple.",
+    imageAnnotation:
+      "Climber enters a loose section, high on the North Face of Mount Temple.",
     location: {
-      name: "Banff national park, Alberta, Canada.",
-      latitude: 46.5778,
-      longitude: 8.0053,
+      name: "Banff National Park, Alberta, Canada.",
+      latitude: 51.4968,
+      longitude: -115.9281,
     },
-  }, 
+  },
   {
-    id: 14  ,
+    id: 14,
     title: "Espejos",
     content: `En ojos profusos
     Que nos son los míos, 
@@ -285,11 +291,11 @@ Nous pour qui nos racines sont des fleurs.
     image: espejos,
     imageAnnotation: "Solo Climber negotiates an exposed ridge on Mt. Hungabee",
     location: {
-      name: "Yoho national park, BC, Canada.",
-      latitude: 46.5778,
-      longitude: 8.0053,  
+      name: "Yoho National Park, BC, Canada.",
+      latitude: 51.4993,
+      longitude: -116.5765,
     },
-  }, 
+  },
   {
     id: 13,
     title: "Le Cadre Humain",
@@ -302,14 +308,15 @@ Son regard vif et morne,
 Et l’étincelle d’un soupire mondain
 Fendit le cadre humain.`,
     image: leCadreHumain,
-    imageAnnotation: "Anonymous skier cresting the summit ridge towards Miner's Gulley.",
+    imageAnnotation:
+      "Anonymous skier cresting the summit ridge towards Miner's Gulley.",
     location: {
       name: "Canmore, Alberta, Canada.",
-      latitude: 46.5778,
-      longitude: 8.0053,
+      latitude: 51.0894,
+      longitude: -115.3558,
     },
-  }, 
-  {  
+  },
+  {
     id: 12,
     title: "L'Ame Immortelle",
     content: `Ma communauté? 
@@ -319,11 +326,11 @@ Fendit le cadre humain.`,
     image: lAmeImmortelle,
     imageAnnotation: "Bootpacking up Aemmer Couloir on Temple North Face. ",
     location: {
-      name: "Banff national park, Alberta, Canada.",
-      latitude: 46.5778,
-      longitude: 8.0053,
+      name: "Banff National Park, Alberta, Canada.",
+      latitude: 51.4968,
+      longitude: -115.9281,
     },
-  }, 
+  },
   {
     id: 11,
     title: "Melancholia",
@@ -340,11 +347,11 @@ Faded thus upon a bed of leaves
     image: melancholia,
     imageAnnotation: "Winter scene on the Bow river.",
     location: {
-      name: "Banff national park, Alberta, Canada.",
-      latitude: 46.5778,
-      longitude: 8.0053,
+      name: "Banff National Park, Alberta, Canada.",
+      latitude: 51.4968,
+      longitude: -115.9281,
     },
-  }, 
+  },
   {
     id: 10,
     title: "Mortality",
@@ -362,12 +369,12 @@ Faded thus upon a bed of leaves
     image: mortality,
     imageAnnotation: "Mount Hungabee",
     location: {
-      name: "Yoho national park, BC, Canada.",
-      latitude: 46.5778,
-      longitude: 8.0053,
+      name: "Yoho National Park, BC, Canada.",
+      latitude: 51.4993,
+      longitude: -116.5765,
     },
   },
-   {
+  {
     id: 9,
     title: "Los Lobos",
     content: `By and by, the wolves in my chest
@@ -389,13 +396,13 @@ I hear the muffled songs of my heart. `,
     image: losLobos,
     imageAnnotation: "First light by Kindergarten Couloir. ",
     location: {
-      name: "Kootenay national park, BC, Canada.",
-      latitude: 46.5778,
-      longitude: 8.0053,
+      name: "Kootenay National Park, BC, Canada.",
+      latitude: 50.9227,
+      longitude: -115.0023,
     },
-  }, 
+  },
   {
-    id:8 ,
+    id: 8,
     title: "The Snow",
     content: `The steep slopes have masked their edges,
 Now soft shimmered with the fallen snow. 
@@ -416,13 +423,13 @@ Might I repay this conferring gift of peace?
     image: theSnow,
     imageAnnotation: "Winter scene in Kananaskis country. ",
     location: {
-      name: "Kananaskis country, Alberta, Canada.",
-      latitude: 46.5778,
-      longitude: 8.0053,
+      name: "Kananaskis Country, Alberta, Canada.",
+      latitude: 50.9,
+      longitude: -114.5,
     },
   },
   {
-    id:7 ,
+    id: 7,
     title: "L'Automne",
     content: `Au temps que la lumière
 Se fend au froid – et se raccourci
@@ -434,8 +441,8 @@ Dont nous voyons dans ces champs éventré. `,
     imageAnnotation: "Unknown massif in the Coast Mountains.",
     location: {
       name: "British Columbia, Canada.",
-      latitude: 46.5778,
-      longitude: 8.0053,
+      latitude: 53.7267,
+      longitude: -127.6476,
     },
   },
   {
@@ -451,13 +458,14 @@ A cathedral of stone stands yet
 And we, pilgrims to Heaven's step,
 Despondent, lay by walls of clay.`,
     image: mtAlberta,
-    imageAnnotation: "Mount Alberta veiled in smoke at twilight, viewed from the valley floor.",
+    imageAnnotation:
+      "Mount Alberta veiled in smoke at twilight, viewed from the valley floor.",
     location: {
-      name: "Jasper national park, Alberta, Canada",
-      latitude: 46.5778,
-      longitude: 8.0053,
+      name: "Jasper National Park, Alberta, Canada.",
+      latitude: 52.8734,
+      longitude: -118.0821,
     },
-  }, 
+  },
   {
     id: 5,
     title: "Colombia",
@@ -470,13 +478,14 @@ Space, as if to yawn,
 Gaps the clouds fertile,
 Of a pale blue that seems to sing.`,
     image: colombia,
-    imageAnnotation: "Mount Colombia, seen from Snowdome on the  Colombia icefield. ",
+    imageAnnotation:
+      "Mount Colombia, seen from Snowdome on the  Colombia icefield. ",
     location: {
-      name: "Jasper national park, Alberta, Canada",
-      latitude: 46.5778,
-      longitude: 8.0053,
+      name: "Jasper National Park, Alberta, Canada",
+      latitude: 51.3071,
+      longitude: -116.4704,
     },
-  }, 
+  },
   {
     id: 4,
     title: " Forest Song",
@@ -497,10 +506,10 @@ Qui nous plonge de nouveau au mystère.`,
     imageAnnotation: "Flood Falls.",
     location: {
       name: "Hope, British Columbia, Canada",
-      latitude: 46.5778,
-      longitude: 8.0053,
+      latitude: 49.3764,
+      longitude: -121.4482,
     },
-  }, 
+  },
   {
     id: 3,
     title: " Liberté",
@@ -513,11 +522,11 @@ Du ciel tombé, comme un rêve.`,
     image: liberté,
     imageAnnotation: "Mt.Whymper in vermillion pass.",
     location: {
-      name: "Kootenay national park, BC, Canada",
-      latitude: 46.5778,
-      longitude: 8.0053,
+      name: "Kootenay National Park, BC, Canada",
+      latitude: 50.9985,
+      longitude: -116.0072,
     },
-  }, 
+  },
   {
     id: 2,
     title: " La Rivière",
@@ -531,13 +540,13 @@ Nous nous rencontrons de nouveau ailleurs.`,
     image: laRivière,
     imageAnnotation: "Bow river & Cascade Mountain.",
     location: {
-      name: "Banff national park, Alberta, Canada",
-      latitude: 46.5778,
-      longitude: 8.0053,
+      name: "Banff National Park, Alberta, Canada",
+      latitude: 51.4968,
+      longitude: -115.9281,
     },
-  }, 
+  },
   {
-    id: 1,         
+    id: 1,
     title: "Le Tableau",
     content: `Ma blanche peau se fend,
  Seul et sans témoin, aux sons
@@ -548,9 +557,9 @@ Nous nous rencontrons de nouveau ailleurs.`,
     image: leTableau,
     imageAnnotation: "Ball Range.",
     location: {
-      name: "Kootenay national park, BC, Canada",
-      latitude: 46.5778,
-      longitude: 8.0053,
+      name: "Kootenay National Park, BC, Canada",
+      latitude: 50.9751,
+      longitude: -116.0306,
     },
-  }, 
+  },
 ];
