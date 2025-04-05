@@ -19,15 +19,6 @@ const ScreenReader: React.FC<ScreenReaderProps> = ({
   // Initialize AWS Polly with error handling
   const initializePolly = () => {
     try {
-      // Log all environment variables for debugging
-      console.log("All environment variables:", import.meta.env);
-      console.log("AWS Region:", import.meta.env.VITE_AWS_REGION);
-      console.log("AWS Access Key ID:", import.meta.env.VITE_AWS_ACCESS_KEY_ID);
-      console.log(
-        "AWS Secret Access Key exists:",
-        !!import.meta.env.VITE_AWS_SECRET_ACCESS_KEY
-      );
-
       if (
         !import.meta.env.VITE_AWS_ACCESS_KEY_ID ||
         !import.meta.env.VITE_AWS_SECRET_ACCESS_KEY
@@ -65,8 +56,6 @@ const ScreenReader: React.FC<ScreenReaderProps> = ({
       setIsLoading(true);
       setError(null);
 
-      console.log("Starting speech synthesis...");
-
       // Split content into chunks to avoid TextLengthExceededException
       const maxLength = 3000; // Adjust based on AWS Polly limits
       const contentChunks = [];
@@ -89,9 +78,7 @@ const ScreenReader: React.FC<ScreenReaderProps> = ({
           LanguageCode: "en-US",
         });
 
-        console.log("Synthesizing first chunk:", command.input);
         const response = await polly.send(command);
-        console.log("First chunk synthesis completed", response);
 
         if (!response.AudioStream) {
           throw new Error("No audio stream received from Polly");
@@ -136,9 +123,7 @@ const ScreenReader: React.FC<ScreenReaderProps> = ({
           LanguageCode: "en-US",
         });
 
-        console.log("Synthesizing with params:", command.input);
         const response = await polly.send(command);
-        console.log("Speech synthesis completed", response);
 
         if (!response.AudioStream) {
           throw new Error("No audio stream received from Polly");
