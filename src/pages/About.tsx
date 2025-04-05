@@ -108,7 +108,7 @@ const About = () => {
           <h2>Biography</h2>
           <div className="bio-content">
             <p>
-              In 2019, I embarked on a journey into the heart of the Andes,
+              ​In 2019, I embarked on a journey into the heart of the Andes,
               where I discovered the raw beauty of unguided high-altitude
               mountaineering and the solitude of solo backcountry trekking. This
               initial season in Peru, Bolivia, and Chile led to a transformative
@@ -116,7 +116,7 @@ const About = () => {
               mountaineering.
             </p>
             <p>
-              The global pause of 2020 brought me to the Bow Valley, where I now
+              The global pause of 2020 brought me to the Bow Valley, which I now
               call home. Here, I've immersed myself in the full spectrum of
               mountain craft—from technical rock climbing to ice and mixed
               routes, alpine ascents, and the graceful dance of ski

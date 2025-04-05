@@ -1,5 +1,6 @@
 import ScreenReader from "../../../components/ScreenReader";
 
+import brcard from "../../../assets/travel/br/BRCard.webp"
 import br1 from "../../../assets/travel/br/Br1.webp"
 import br2 from "../../../assets/travel/br/Br2.webp"
 import br3 from "../../../assets/travel/br/Br3.webp"
@@ -101,7 +102,7 @@ Alone again, for the first time since that last swinging rest by horses under my
 
   return (
     <div className="blog-post">
-      <section className="hero">
+<section className="hero" style={{ backgroundImage: `url(${brcard})` }}>
         <div className="hero-content">
           <h1>Red Earth Road</h1>
           <div className="hero-text">
@@ -339,7 +340,7 @@ Alone again, for the first time since that last swinging rest by horses under my
         </p>
 
         <div className="article-image">
-          <img src={br1} alt="Br-156" />
+          <img src={br1} alt="Br-156" loading="lazy" />
           <p className="image-caption">The bus is stuck in the mud</p>
         </div>
 
@@ -378,7 +379,7 @@ Alone again, for the first time since that last swinging rest by horses under my
         </p>
 
         <div className="article-image">
-          <img src={br2} alt="Br-156" />
+          <img src={br2} alt="Br-156" loading="lazy" />
           <p className="image-caption">The bus is stuck in the mud, again.</p>
         </div>
 
@@ -543,7 +544,7 @@ Alone again, for the first time since that last swinging rest by horses under my
         </p>
 
         <div className="article-image">
-          <img src={br3} alt="Br-156" />
+          <img src={br3} alt="Br-156" loading="lazy" />
           <p className="image-caption">View fom the truck bed, looking back.</p>
         </div>
 
@@ -576,8 +577,8 @@ Alone again, for the first time since that last swinging rest by horses under my
         </p>
 
         <div className="article-image">
-          <img src={br4} alt="Br-156" />
-      <p className="image-caption">Waiting to pass. The police is stuck, getting winched by a truck.</p>
+          <img src={br4} alt="Br-156" loading="lazy" />
+          <p className="image-caption">Waiting to pass. The police is stuck, getting winched by a truck.</p>
         </div>
 
         <p>
