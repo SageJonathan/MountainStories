@@ -41,19 +41,52 @@ We drove back to the hostel for a proper nighttime breakfast and a blazing sauna
         This last Saturday, Nat Walkom and I mustered our remaining energies from a 25h alpine push with Ripley Boulianne to go out on skis with a full pack; intending to establish a new route near Pulpit Peak, just north of Lake Louise. We were tired, but the allure of adventure was more enticing than an adequate recovery, especially with a cold snap in the forecast and the imminent arrival of my outbound flight. So, with a couple of hours of sleep, we shuffled gear between vans in the McDonald’s parking lot in Canmore, bid Ripley adieu, filled the tank- and were off. 
         </p>
 
-        ///IMAGE 1
-        ///IMAGE 2
+        <div className="article-image">
+          <img src="/alpineBanner.webp" alt="Solo Climbing" />
+          <p className="image-caption">
+            The freedom and challenge of solo climbing in the Alps
+          </p>
+        </div>
+
+        <div className="article-image">
+          <img src="/alpineBanner.webp" alt="Solo Climbing" />
+          <p className="image-caption">
+            The freedom and challenge of solo climbing in the Alps
+          </p>
+        </div>
+
         <p>Nat hadn’t seen anything apart from some pictures I had taken a week earlier while on a ski tour with Tiffany Hassett. From my estimates, it looked like 2 to 3 pitches of WI4- potentially WI5. Off the bat, I knew I wanted to give this a go with Nat. I was psyched when he shared the stoke. </p>
         <p>We tried making our bags before going to bed for a start at dawn, but after a hearty dinner, we crept into our bunk beds at the wilderness hostel and opted to wake up earlier to get them done.</p>
 
-        ///IMAGE 3
-        ///IMAGE 4
-      
+        <div className="article-image">
+          <img src="/alpineBanner.webp" alt="Solo Climbing" />
+          <p className="image-caption">
+            The freedom and challenge of solo climbing in the Alps
+          </p>
+        </div>
+
+        <div className="article-image">
+          <img src="/alpineBanner.webp" alt="Solo Climbing" />
+          <p className="image-caption">
+            The freedom and challenge of solo climbing in the Alps
+          </p>
+        </div>
       <p>No sweat. We got up, sharpened our picks, ate some oats, and we were off. Skis underfoot at the crack of dawn. Our approach took us just over 2h30 (∼1500m of gain, 8km) over some good ol’ Rockies facets and promising pillow pockets for our ski-out. At the base of the approach couloir, we ditched our skis, slid into our mountain boots, and set off soloing to meet the ice. The initial snow slog quickly gave way to some enjoyable M3 before hitting the ice apron. We continued soloing over WI2 terrain to the base of three distinct pillars. I made an anchor, tied in- and started flaking the rope. 
       Nat quickly joined me and began flaking the other rope.</p> 
 
-      ///IMAGE 5
-      ///IMAGE 6
+      <div className="article-image">
+          <img src="/alpineBanner.webp" alt="Solo Climbing" />
+          <p className="image-caption">
+            The freedom and challenge of solo climbing in the Alps
+          </p>
+        </div>
+
+        <div className="article-image">
+          <img src="/alpineBanner.webp" alt="Solo Climbing" />
+          <p className="image-caption">
+            The freedom and challenge of solo climbing in the Alps
+          </p>
+        </div>
 
     <p>Before us there stood a pillar of WI4 with 2 pillars of WI3 flanking its sides. This wasn’t going to be the multi-pitch climb I had estimated it to be. But here we were so we decided to climb all three of them: 
 Climbing to the top, abseiling down to the original anchor, then set off for the next. Repeat. Repeat.
@@ -62,8 +95,19 @@ Climbing to the top, abseiling down to the original anchor, then set off for the
     After the pillars, we abseiled back down the couloir, swapped into our ski boots, and pointed the tips home. The skiing in the broad gulley was phenomenal and the tree skiing had us laughing hard</p>
 
        
-    ///IMAGE 7
-    ///IMAGE 8
+    <div className="article-image">
+          <img src="/alpineBanner.webp" alt="Solo Climbing" />
+          <p className="image-caption">
+            The freedom and challenge of solo climbing in the Alps
+          </p>
+        </div>
+
+        <div className="article-image">
+          <img src="/alpineBanner.webp" alt="Solo Climbing" />
+          <p className="image-caption">
+            The freedom and challenge of solo climbing in the Alps
+          </p>
+        </div>
 
       <p>We drove back to the hostel for a proper nighttime breakfast and a blazing sauna. A good day out amongst friends. A memorable way to end a trip.</p>
 

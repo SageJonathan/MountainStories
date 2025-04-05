@@ -53,7 +53,7 @@ const About = () => {
             <p>A platform for unconventional storytelling</p>
           </div>
           <div className="hero-description">
-            Exploring the intersection of climbing, travel, and literature
+            Exploring the intersection of climbing, travel, and languages
           </div>
         </div>
       </section>
