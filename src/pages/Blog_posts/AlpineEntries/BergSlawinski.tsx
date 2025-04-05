@@ -1,5 +1,16 @@
 import ScreenReader from "../../../components/ScreenReader";
 
+import man1 from "../../../assets/alpine/manhole/Man1.webp"
+import man2 from "../../../assets/alpine/manhole/Man2.webp"
+import man3 from "../../../assets/alpine/manhole/Man3.webp"
+import man4 from "../../../assets/alpine/manhole/Man4.webp"
+import man5 from "../../../assets/alpine/manhole/Man5.webp"
+import man6 from "../../../assets/alpine/manhole/Man6.webp"
+import man7 from "../../../assets/alpine/manhole/Man7.webp"
+import man8 from "../../../assets/alpine/manhole/Man8.webp"
+import man9 from "../../../assets/alpine/manhole/Man9.webp"
+import man10 from "../../../assets/alpine/manhole/Man10.webp"
+
 const BergSlawinski = () => {
   const content = `
     Berg Slawinski. Second Ascent.
@@ -77,7 +88,14 @@ The whole adventure certainly took us longer than we had expected, but we are al
           to its condition in winter.
         </p>
 
-        <h2>Approach</h2>
+        <div className="article-image"> 
+          <img src={man1} alt="Berg Slawinski" />
+          <p className="image-caption">
+          The route is the obvious gash in the center. 
+          </p>
+        </div>
+
+        <h2>Approach</h2>       
         <p>
           After a couple of hours of skinning towards Tryst Lake, we reached the
           bottom of a scree bowl covered in snow. There, we left our skis and
@@ -89,9 +107,9 @@ The whole adventure certainly took us longer than we had expected, but we are al
         </p>
 
         <div className="article-image">
-          <img src="/alpineBanner.webp" alt="Solo Climbing" />
+                <img src={man2} alt="Berg Slawinski" />
           <p className="image-caption">
-            The freedom and challenge of solo climbing in the Alps
+          Final approach to the climb. Deep!
           </p>
         </div>
 
@@ -111,9 +129,9 @@ The whole adventure certainly took us longer than we had expected, but we are al
         </p>
 
         <div className="article-image">
-          <img src="/alpineBanner.webp" alt="Solo Climbing" />
+                        <img src={man3} alt="Berg Slawinski" />
           <p className="image-caption">
-            The freedom and challenge of solo climbing in the Alps
+          Start of the route. Nat belaying John. 
           </p>
         </div>
 
@@ -130,9 +148,9 @@ The whole adventure certainly took us longer than we had expected, but we are al
         </p>
 
         <div className="article-image">
-          <img src="/alpineBanner.webp" alt="Solo Climbing" />
+          <img src={man4} alt="Berg Slawinski" />
           <p className="image-caption">
-            The freedom and challenge of solo climbing in the Alps
+          Nat past the difficulties of P2. Looking from the anchor
           </p>
         </div>
 
@@ -152,9 +170,9 @@ The whole adventure certainly took us longer than we had expected, but we are al
         </p>
 
         <div className="article-image">
-          <img src="/alpineBanner.webp" alt="Solo Climbing" />
-          <p className="image-caption">
-            The freedom and challenge of solo climbing in the Alps
+          <img src={man5} alt="Berg Slawinski" />
+          <p className="image-caption"> 
+          John leading the start of P3. 
           </p>
         </div>
 
@@ -173,9 +191,9 @@ The whole adventure certainly took us longer than we had expected, but we are al
         </p>
 
         <div className="article-image">
-          <img src="/alpineBanner.webp" alt="Solo Climbing" />
+          <img src={man6} alt="Berg Slawinski" />
           <p className="image-caption">
-            The freedom and challenge of solo climbing in the Alps
+          Ripley begining the off-width
           </p>
         </div>
 
@@ -190,9 +208,9 @@ The whole adventure certainly took us longer than we had expected, but we are al
         </p>
 
         <div className="article-image">
-          <img src="/alpineBanner.webp" alt="Solo Climbing" />
+          <img src={man7} alt="Berg Slawinski" />
           <p className="image-caption">
-            The freedom and challenge of solo climbing in the Alps
+          Ripley leaves the ancohor towards P4. 
           </p>
         </div>
 
@@ -212,9 +230,9 @@ The whole adventure certainly took us longer than we had expected, but we are al
         </p>
 
         <div className="article-image">
-          <img src="/alpineBanner.webp" alt="Solo Climbing" />
+          <img src={man8} alt="Berg Slawinski" />
           <p className="image-caption">
-            The freedom and challenge of solo climbing in the Alps
+          Nat setting off into P6. 
           </p>
         </div>
 
@@ -229,9 +247,9 @@ The whole adventure certainly took us longer than we had expected, but we are al
         </p>
 
         <div className="article-image">
-          <img src="/alpineBanner.webp" alt="Solo Climbing" />
+          <img src={man9} alt="Berg Slawinski" />
           <p className="image-caption">
-            The freedom and challenge of solo climbing in the Alps
+          Nat belaying. John coming through the cornice.   
           </p>
         </div>
 
@@ -293,9 +311,9 @@ The whole adventure certainly took us longer than we had expected, but we are al
         </p>
 
         <div className="article-image">
-          <img src="/alpineBanner.webp" alt="Solo Climbing" />
-          <p className="image-caption">
-            The freedom and challenge of solo climbing in the Alps
+          <img src={man10} alt="Solo Climbing" />
+          <p className="image-caption"> 
+          L to R: John, Ripley, Nat.     
           </p>
         </div>
       </div>
