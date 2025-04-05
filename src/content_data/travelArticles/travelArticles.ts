@@ -1,38 +1,42 @@
+import br156Card from "../../assets/travel/br/BRCard.webp";
+import surinameCard from "../../assets/travel/dharma/DharmaCard.webp";
+import roraimaCard from "../../assets/travel/roraima/RoraimaCard.webp";
+
 export const travelArticles = [
   {
-    title: "Swiss Alps Adventure",
+    title: "BR-156: Red Earth Road",
     description:
-      "A journey through the Swiss Alps, exploring hidden valleys and ancient mountain passes.",
-    imageUrl: "/swiss-alps.webp",
-    link: "/swiss-alps-adventure",
+      "Traveling along BR-156 in Brazil, cutting through the heart of the Amazon rainforest and red clay landscapes.",
+    imageUrl: br156Card,
+    link: "/br-156-red-earth-road",
     location: {
-      name: "Swiss Alps, Switzerland",
-      latitude: 46.8182,
-      longitude: 8.2275,
+      name: "BR-156, Brazil",
+      latitude: 1.5586,
+      longitude: -52.7769,
     },
   },
   {
-    title: "Italian Dolomites",
+    title: "French Guiana: Drunk on Dharma",
     description:
-      "Exploring the dramatic peaks and rich cultural heritage of the Italian Dolomites.",
-    imageUrl: "/dolomites.webp",
-    link: "/italian-dolomites",
+      "A reflective journey into the heart of French Guiana's rainforests, blending solitude, nature, and spiritual insight in Matiti.",
+    imageUrl: surinameCard,
+    link: "/french-guiana-dharma",
     location: {
-      name: "Dolomites, Italy",
-      latitude: 46.4102,
-      longitude: 11.844,
+      name: "Matiti, French Guiana",
+      latitude: 5.2827,
+      longitude: -52.8206,
     },
   },
   {
-    title: "French Pyrenees",
+    title: "Roraima: A Thousand Steps",
     description:
-      "A trek through the French Pyrenees, discovering remote villages and stunning landscapes.",
-    imageUrl: "/pyrenees.webp",
-    link: "/french-pyrenees",
+      "Climbing Mount Roraima, the legendary tabletop mountain at the tripoint of Venezuela, Brazil, and Guyana.",
+    imageUrl: roraimaCard,
+    link: "/roraima-steps",
     location: {
-      name: "French Pyrenees, France",
-      latitude: 42.8333,
-      longitude: 1.0,
+      name: "Mount Roraima, Brazil",
+      latitude: 5.2270,
+      longitude: -60.7500,
     },
   },
 ];
