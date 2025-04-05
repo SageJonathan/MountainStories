@@ -1,6 +1,6 @@
 import ScreenReader from "../../../components/ScreenReader";
 
-const MountainWeather = () => {
+const Cerberus = () => {
   const content = `
     Mountain Weather
     Understanding weather patterns in the Alpine region
@@ -98,4 +98,4 @@ const MountainWeather = () => {
   );
 };
 
-export default MountainWeather;
+export default Cerberus ;

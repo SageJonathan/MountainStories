@@ -28,11 +28,11 @@ export const alpineArticles = [
     },
   },
   {
-    title: "FA: Cerebrus",
+    title: "FA: Cerberus",
     description:
       "",
     imageUrl: cerebrusCard ,
-    link: "/mountain-weather",
+    link: "/cerberus",
     location: {
       name: "Pulpits, Alberta, Canada",
       latitude: 51.5681,
@@ -44,7 +44,7 @@ export const alpineArticles = [
     description:
       "",
     imageUrl: yamnuskaCard,
-    link: "/mountain-weather",
+    link: "/yamnuska-whipper",
     location: {
       name: "Yamnuska, Alberta, Canada",
       latitude: 51.0903,
