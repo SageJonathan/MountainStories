@@ -1,5 +1,13 @@
 import ScreenReader from "../../../components/ScreenReader";
 
+import yam1 from "../../../assets/alpine/yamnuska/Yam1.webp"
+import yam2 from "../../../assets/alpine/yamnuska/Yam2.webp"
+import yam3 from "../../../assets/alpine/yamnuska/Yam3.webp"
+import yam4 from "../../../assets/alpine/yamnuska/Yam4.webp"
+import yam5 from "../../../assets/alpine/yamnuska/Yam5.webp"
+
+
+
 const SoloInTheAlps = () => {
   const content = `
    Saturday morning Sarah and I found ourselves on Yamnuska, the crown jewel of traditional climbing in the Canadian Rockies. Also known as an aesthetic blob of choss. After leaving Canmore at 6:30 am, we packed our bags with a rack fit for a fulfilling send on the uber class line, Direttissima; established in 1957 by none other than H. Kahl, H Gosmer, and L. Grillmair. As is common to the generations for whom 5.10 was inconceivable, they graded the 8-pitch route a sandbagged 5.8+. A route that at the time put the Canadian Rockies on the run with the rest of Europe. Throughout the years, multiple key holds have blown off and the sparse rock solid enough to have weathered the decades are now polished, seemingly wet from even the belays. Nonetheless, this was our chosen line, a starting point for our new belaylationship.
@@ -63,9 +71,9 @@ The route is named Yamabushi.
         </p>
 
         <div className="article-image">
-          <img src="/alpineBanner.webp" alt="Solo Climbing" />
+          <img src={yam1} alt="Yamnuska" />
           <p className="image-caption">
-            The freedom and challenge of solo climbing in the Alps
+            Mt. Yamnuska
           </p>
         </div>
 
@@ -107,9 +115,9 @@ The route is named Yamabushi.
         </p>
 
         <div className="article-image">
-          <img src="/alpineBanner.webp" alt="Solo Climbing" />
+          <img src={yam2} alt="Yamnuska" />
           <p className="image-caption">
-            The freedom and challenge of solo climbing in the Alps
+          Looking down the route
           </p>
         </div>
 
@@ -167,9 +175,9 @@ The route is named Yamabushi.
         </p>
 
         <div className="article-image">
-          <img src="/alpineBanner.webp" alt="Solo Climbing" />
+          <img src={yam3} alt="Yamnuska" />
           <p className="image-caption">
-            The freedom and challenge of solo climbing in the Alps
+          A broken 0.5 link cam
           </p>
         </div>
 
@@ -221,6 +229,14 @@ The route is named Yamabushi.
           Saskatchewan and sees me off.
         </p>
 
+
+        <div className="article-image">
+          <img src={yam4} alt="Yamnuska" />
+          <p className="image-caption">
+            The good news is that im not dead. 
+          </p>
+        </div>
+
         <p>
           I’ve been resting in my grand caravan for the past week now. Watching
           clouds roll by as if only to lull me with their quaint falls of snow.
@@ -242,9 +258,9 @@ The route is named Yamabushi.
         </p>
 
         <div className="article-image">
-          <img src="/alpineBanner.webp" alt="Solo Climbing" />
+          <img src={yam5} alt="Yamnuska" />
           <p className="image-caption">
-            The freedom and challenge of solo climbing in the Alps
+          Looking back at the route
           </p>
         </div>
 
