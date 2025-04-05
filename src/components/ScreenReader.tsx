@@ -46,7 +46,7 @@ const ScreenReader: React.FC<ScreenReaderProps> = ({
 
   const polly = initializePolly();
 
-  const synthesizeSpeech = async () => {
+  const synthesizeSpeechForPlayback = async () => {
     if (!polly) {
       setError("Speech service is not available");
       return;
@@ -62,8 +62,6 @@ const ScreenReader: React.FC<ScreenReaderProps> = ({
       for (let i = 0; i < content.length; i += maxLength) {
         contentChunks.push(content.slice(i, i + maxLength));
       }
-
-      const audioBlobs = [];
 
       // Stream the first chunk for immediate playback
       const firstChunk = contentChunks.shift();
@@ -88,7 +86,6 @@ const ScreenReader: React.FC<ScreenReaderProps> = ({
           [await response.AudioStream.transformToByteArray()],
           { type: "audio/mpeg" }
         );
-        audioBlobs.push(audioBlob);
 
         // Play the first chunk
         const audioUrl = URL.createObjectURL(audioBlob);
@@ -110,8 +107,34 @@ const ScreenReader: React.FC<ScreenReaderProps> = ({
         setIsReading(true);
         setIsLoading(false);
       }
+    } catch (error) {
+      console.error("Error during speech synthesis:", error);
+      setError("Failed to process audio. Please try again.");
+      setIsReading(false);
+      setIsLoading(false);
+    }
+  };
 
-      // Fetch remaining chunks in the background
+  const synthesizeSpeechForDownload = async () => {
+    if (!polly) {
+      setError("Speech service is not available");
+      return;
+    }
+
+    try {
+      setIsDownloading(true);
+      setError(null);
+
+      // Split content into chunks to avoid TextLengthExceededException
+      const maxLength = 3000; // Adjust based on AWS Polly limits
+      const contentChunks = [];
+      for (let i = 0; i < content.length; i += maxLength) {
+        contentChunks.push(content.slice(i, i + maxLength));
+      }
+
+      const audioBlobs = [];
+
+      // Fetch all chunks
       for (const chunk of contentChunks) {
         const command = new SynthesizeSpeechCommand({
           Text: chunk,
@@ -139,7 +162,7 @@ const ScreenReader: React.FC<ScreenReaderProps> = ({
       // Concatenate all audio blobs
       const combinedBlob = new Blob(audioBlobs, { type: "audio/mpeg" });
 
-      // Download the full audio in the background
+      // Download the full audio
       const url = URL.createObjectURL(combinedBlob);
       const link = document.createElement("a");
       link.href = url;
@@ -153,8 +176,6 @@ const ScreenReader: React.FC<ScreenReaderProps> = ({
     } catch (error) {
       console.error("Error during speech synthesis:", error);
       setError("Failed to process audio. Please try again.");
-      setIsReading(false);
-      setIsLoading(false);
       setIsDownloading(false);
     }
   };
@@ -166,13 +187,12 @@ const ScreenReader: React.FC<ScreenReaderProps> = ({
         setIsReading(false);
       }
     } else {
-      await synthesizeSpeech();
+      await synthesizeSpeechForPlayback();
     }
   };
 
   const handleDownload = () => {
-    setIsDownloading(true);
-    synthesizeSpeech();
+    synthesizeSpeechForDownload();
   };
 
   // Cleanup on unmount
