@@ -43,8 +43,6 @@ The short description from the first ascensionists: ‘’contour right until th
 
 Conclusion
 The whole adventure certainly took us longer than we had expected, but we are also glad that we kept pushing and completed the loop. It was a 25h push car-to-car. The route was in full winter conditions yet the wheatear was clement: clear, cold, and with no wind. The climbing itself was engaging and high quality. Save for a few sections, the gear is good and the rock quality was above average for Rockies standard. We are pleased with our rack and would not have changed anything. The one thing is, wear your Gore-Tex!
-
-
   `;
 
   return (

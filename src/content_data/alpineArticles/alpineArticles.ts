@@ -1,38 +1,54 @@
+import manholeCard from "../../assets/alpine/manhole/ManholeCard.webp"
+import yamnuskaCard from "../../assets/alpine/yamnuska/YamnuskaCard.webp"
+import cerebrusCard from "../../assets/alpine/cerberus/CerberusCard.webp"
+
 export const alpineArticles = [
+  // {
+  //   title: "tempalte",
+  //   description:
+  //     "A personal account of solo climbing in the European Alps, exploring the mental and physical challenges.",
+  //   imageUrl: "img",
+  //   link: "/solo-in-the-alps",
+  //   location: {
+  //     name: "European Alps",
+  //     latitude: 46.2276,
+  //     longitude: 6.1432,
+  //   },
+  // },
   {
     title: "Berg Slawinski",
     description:
-      "A technical account of the first successful ascent of the Matterhorn, detailing the challenges and triumphs.",
-    imageUrl: "/matterhorn.webp",
+      "A topgraphic account of the first successful second ascent of the Manhole; establish by Raphael Slawinski and Alex Berg",
+    imageUrl: manholeCard,
     link: "/berg-slawinski",
     location: {
-      name: "Matterhorn, Zermatt, Switzerland",
-      latitude: 45.9766,
-      longitude: 7.6586,
+      name: "Manhole, Alberta, Canada",
+      latitude: 50.8333,
+      longitude: -115.2333,
     },
   },
   {
-    title: "Mountain Weather",
+    title: "FA: Cerebrus",
     description:
-      "Understanding weather patterns in the Alpine region and their impact on climbing conditions.",
-    imageUrl: "/weather.webp",
+      "",
+    imageUrl: cerebrusCard ,
     link: "/mountain-weather",
     location: {
-      name: "Alpine region, Europe",
-      latitude: 46.2276,
-      longitude: 6.1432,
+      name: "Pulpits, Alberta, Canada",
+      latitude: 51.5681,
+      longitude: -116.3681,
     },
   },
   {
-    title: "Solo in the Alps",
+    title: "Yamnuska Whipper",
     description:
-      "A personal account of solo climbing in the European Alps, exploring the mental and physical challenges.",
-    imageUrl: "/solo.webp",
-    link: "/solo-in-the-alps",
+      "",
+    imageUrl: yamnuskaCard,
+    link: "/mountain-weather",
     location: {
-      name: "European Alps",
-      latitude: 46.2276,
-      longitude: 6.1432,
+      name: "Yamnuska, Alberta, Canada",
+      latitude: 51.0903,
+      longitude: -115.1236,
     },
   },
 ];
