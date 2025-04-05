@@ -1,5 +1,11 @@
 import ScreenReader from "../../../components/ScreenReader";
 
+import br1 from "../../../assets/travel/br/Br1.webp"
+import br2 from "../../../assets/travel/br/Br2.webp"
+import br3 from "../../../assets/travel/br/Br3.webp"
+import br4 from "../../../assets/travel/br/Br4.webp"
+
+
 const RedEarth = () => {
   const content = `
     The eyes of strangers were cast down like nets into an unknown depth, indifferent and steady. So were the fishermen, hung to their feet by the decaying dock. Others, adrift atop the concrete terraces of the upper street. Dominos, cards, beer- and stares. Men making their living by capturing creatures who, finding an otherwise good way through a stream, find it at the wrong time. Curious they were. Here was coming youth to town, one with the reputation of never being able to leave. What was a foreigner doing in these parts-alone- afar from any slightly touristic destination? In a state where over 70% of the land is protected; where, consequently, any form of movement is limited to conditions and therefore the seasons. Just as a fish, I too choose this way en route to another- a little luckier, however.
@@ -333,8 +339,8 @@ Alone again, for the first time since that last swinging rest by horses under my
         </p>
 
         <div className="article-image">
-          <img src={dharma7} alt="Dharma" />
-          <p className="image-caption">Approaching the Brazilian border</p>
+          <img src={br1} alt="Dharma" />
+          <p className="image-caption">The bus is stuck in the mud</p>
         </div>
 
         <p>
@@ -372,8 +378,8 @@ Alone again, for the first time since that last swinging rest by horses under my
         </p>
 
         <div className="article-image">
-          <img src={dharma7} alt="Dharma" />
-          <p className="image-caption">Approaching the Brazilian border</p>
+          <img src={br2} alt="Dharma" />
+          <p className="image-caption">The bus is stuck in the mud, again.</p>
         </div>
 
         <p>
@@ -537,8 +543,8 @@ Alone again, for the first time since that last swinging rest by horses under my
         </p>
 
         <div className="article-image">
-          <img src={dharma7} alt="Dharma" />
-          <p className="image-caption">Approaching the Brazilian border</p>
+          <img src={br3} alt="Dharma" />
+          <p className="image-caption">View fom the truck bed, looking back.</p>
         </div>
 
         <p>
@@ -570,8 +576,8 @@ Alone again, for the first time since that last swinging rest by horses under my
         </p>
 
         <div className="article-image">
-          <img src={dharma7} alt="Dharma" />
-          <p className="image-caption">Approaching the Brazilian border</p>
+          <img src={br4} alt="Dharma" />
+      <p className="image-caption">Waiting to pass. The police is stuck, getting winched by a truck.</p>
         </div>
 
         <p>
