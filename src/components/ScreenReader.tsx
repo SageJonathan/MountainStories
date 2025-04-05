@@ -55,57 +55,55 @@ const ScreenReader: React.FC<ScreenReaderProps> = ({
 
   const polly = initializePolly();
 
-  const synthesizeSpeech = async (isDownload: boolean = false) => {
+  const synthesizeSpeech = async () => {
     if (!polly) {
       setError("Speech service is not available");
       return;
     }
 
     try {
-      if (isDownload) {
-        setIsDownloading(true);
-      } else {
-        setIsLoading(true);
-      }
+      setIsLoading(true);
       setError(null);
 
       console.log("Starting speech synthesis...");
 
-      const command = new SynthesizeSpeechCommand({
-        Text: content,
-        OutputFormat: "mp3",
-        VoiceId: "Danielle",
-        Engine: "neural",
-        TextType: "text",
-        SampleRate: "24000",
-        LanguageCode: "en-US",
-      });
-
-      console.log("Synthesizing with params:", command.input);
-      const response = await polly.send(command);
-      console.log("Speech synthesis completed");
-
-      if (!response.AudioStream) {
-        throw new Error("No audio stream received from Polly");
+      // Split content into chunks to avoid TextLengthExceededException
+      const maxLength = 3000; // Adjust based on AWS Polly limits
+      const contentChunks = [];
+      for (let i = 0; i < content.length; i += maxLength) {
+        contentChunks.push(content.slice(i, i + maxLength));
       }
 
-      const audioBlob = new Blob(
-        [await response.AudioStream.transformToByteArray()],
-        { type: "audio/mpeg" }
-      );
+      const audioBlobs = [];
 
-      if (isDownload) {
-        const url = URL.createObjectURL(audioBlob);
-        const link = document.createElement("a");
-        link.href = url;
-        const filename = `${title.toLowerCase().replace(/\s+/g, "-")}.mp3`;
-        link.download = filename;
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
-        URL.revokeObjectURL(url);
-        setIsDownloading(false);
-      } else {
+      // Stream the first chunk for immediate playback
+      const firstChunk = contentChunks.shift();
+      if (firstChunk) {
+        const command = new SynthesizeSpeechCommand({
+          Text: firstChunk,
+          OutputFormat: "mp3",
+          VoiceId: "Danielle",
+          Engine: "neural",
+          TextType: "text",
+          SampleRate: "24000",
+          LanguageCode: "en-US",
+        });
+
+        console.log("Synthesizing first chunk:", command.input);
+        const response = await polly.send(command);
+        console.log("First chunk synthesis completed", response);
+
+        if (!response.AudioStream) {
+          throw new Error("No audio stream received from Polly");
+        }
+
+        const audioBlob = new Blob(
+          [await response.AudioStream.transformToByteArray()],
+          { type: "audio/mpeg" }
+        );
+        audioBlobs.push(audioBlob);
+
+        // Play the first chunk
         const audioUrl = URL.createObjectURL(audioBlob);
         if (!audioRef.current) {
           audioRef.current = new Audio();
@@ -125,8 +123,50 @@ const ScreenReader: React.FC<ScreenReaderProps> = ({
         setIsReading(true);
         setIsLoading(false);
       }
+
+      // Fetch remaining chunks in the background
+      for (const chunk of contentChunks) {
+        const command = new SynthesizeSpeechCommand({
+          Text: chunk,
+          OutputFormat: "mp3",
+          VoiceId: "Danielle",
+          Engine: "neural",
+          TextType: "text",
+          SampleRate: "24000",
+          LanguageCode: "en-US",
+        });
+
+        console.log("Synthesizing with params:", command.input);
+        const response = await polly.send(command);
+        console.log("Speech synthesis completed", response);
+
+        if (!response.AudioStream) {
+          throw new Error("No audio stream received from Polly");
+        }
+
+        const audioBlob = new Blob(
+          [await response.AudioStream.transformToByteArray()],
+          { type: "audio/mpeg" }
+        );
+        audioBlobs.push(audioBlob);
+      }
+
+      // Concatenate all audio blobs
+      const combinedBlob = new Blob(audioBlobs, { type: "audio/mpeg" });
+
+      // Download the full audio in the background
+      const url = URL.createObjectURL(combinedBlob);
+      const link = document.createElement("a");
+      link.href = url;
+      const filename = `${title.toLowerCase().replace(/\s+/g, "-")}.mp3`;
+      link.download = filename;
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      URL.revokeObjectURL(url);
+      setIsDownloading(false);
     } catch (error) {
-      console.error("Error:", error);
+      console.error("Error during speech synthesis:", error);
       setError("Failed to process audio. Please try again.");
       setIsReading(false);
       setIsLoading(false);
@@ -141,12 +181,13 @@ const ScreenReader: React.FC<ScreenReaderProps> = ({
         setIsReading(false);
       }
     } else {
-      await synthesizeSpeech(false);
+      await synthesizeSpeech();
     }
   };
 
   const handleDownload = () => {
-    synthesizeSpeech(true);
+    setIsDownloading(true);
+    synthesizeSpeech();
   };
 
   // Cleanup on unmount
@@ -155,7 +196,12 @@ const ScreenReader: React.FC<ScreenReaderProps> = ({
       if (audioRef.current) {
         audioRef.current.pause();
         audioRef.current.src = "";
+        audioRef.current = null;
       }
+      // Reset loading state
+      setIsLoading(false);
+      setIsDownloading(false);
+      setIsReading(false);
     };
   }, []);
 
