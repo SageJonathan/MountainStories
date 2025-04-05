@@ -2,97 +2,72 @@ import ScreenReader from "../../../components/ScreenReader";
 
 const Cerberus = () => {
   const content = `
-    Mountain Weather
-    Understanding weather patterns in the Alpine region
+    This last Saturday, Nat Walkom and I mustered our remaining energies from a 25h alpine push with Ripley Boulianne to go out on skis with a full pack; intending to establish a new route near Pulpit Peak, just north of Lake Louise. We were tired, but the allure of adventure was more enticing than an adequate recovery, especially with a cold snap in the forecast and the imminent arrival of my outbound flight. So, with a couple of hours of sleep, we shuffled gear between vans in the McDonald’s parking lot in Canmore, bid Ripley adieu, filled the tank- and were off. 
 
-    Understanding weather patterns in the Alpine region is crucial for safe climbing. This article examines the unique meteorological conditions that affect climbing in the European Alps.
+    Nat hadn’t seen anything apart from some pictures I had taken a week earlier while on a ski tour with Tiffany Hassett. From my estimates, it looked like 2 to 3 pitches of WI4- potentially WI5. Off the bat, I knew I wanted to give this a go with Nat. I was psyched when he shared the stoke. 
 
-    Weather Patterns
-    - Seasonal variations
-    - Local effects
-    - Storm development
-    - Wind patterns
+    We tried making our bags before going to bed for a start at dawn, but after a hearty dinner, we crept into our bunk beds at the wilderness hostel and opted to wake up earlier to get them done.
 
-    The Alpine region experiences rapid weather changes, making it essential to monitor conditions closely. Understanding these patterns can mean the difference between a successful climb and a dangerous situation.
+    No sweat. We got up, sharpened our picks, ate some oats, and we were off. Skis underfoot at the crack of dawn. Our approach took us just over 2h30 (∼1500m of gain, 8km) over some good ol’ Rockies facets and promising pillow pockets for our ski-out. At the base of the approach couloir, we ditched our skis, slid into our mountain boots, and set off soloing to meet the ice. The initial snow slog quickly gave way to some enjoyable M3 before hitting the ice apron. We continued soloing over WI2 terrain to the base of three distinct pillars. I made an anchor, tied in- and started flaking the rope. 
+Nat quickly joined me and began flaking the other rope.
 
-    Key Factors
-    - Temperature inversions
-    - Wind direction
-    - Cloud formation
-    - Precipitation types
+Before us there stood a pillar of WI4 with 2 pillars of WI3 flanking its sides. This wasn’t going to be the multi-pitch climb I had estimated it to be. But here we were so we decided to climb all three of them: 
+Climbing to the top, abseiling down to the original anchor, then set off for the next. Repeat. Repeat.
 
-    Local knowledge is invaluable. The interaction between different mountain ranges creates microclimates that can significantly impact climbing conditions.
+After the pillars, we abseiled back down the couloir, swapped into our ski boots, and pointed the tips home. The skiing in the broad gulley was phenomenal and the tree skiing had us laughing hard
 
-    Safety Guidelines
-    - Weather monitoring
-    - Decision making
-    - Emergency planning
-    - Communication protocols
+We drove back to the hostel for a proper nighttime breakfast and a blazing sauna. A good day out amongst friends. A memorable way to end a trip. 
 
-    Always have multiple weather sources and be prepared to adjust plans based on changing conditions.
+ We named the route Cerberus WI4 M3.
+
+
   `;
 
   return (
     <div className="blog-post">
       <section className="hero">
         <div className="hero-content">
-          <h1>Mountain Weather</h1>
+          <h1>First Ascent: Cerberus</h1>
           <div className="hero-text">
-            <p>Understanding weather patterns in the Alpine region</p>
+            <p>WI4 M3</p>
           </div>
         </div>
       </section>
 
       <div className="article-content">
-        <ScreenReader content={content} title="Mountain Weather" />
+        <ScreenReader content={content} title="First Ascent: Cerberus" />
 
         <p>
-          Understanding weather patterns in the Alpine region is crucial for
-          safe climbing. This article examines the unique meteorological
-          conditions that affect climbing in the European Alps.
+        This last Saturday, Nat Walkom and I mustered our remaining energies from a 25h alpine push with Ripley Boulianne to go out on skis with a full pack; intending to establish a new route near Pulpit Peak, just north of Lake Louise. We were tired, but the allure of adventure was more enticing than an adequate recovery, especially with a cold snap in the forecast and the imminent arrival of my outbound flight. So, with a couple of hours of sleep, we shuffled gear between vans in the McDonald’s parking lot in Canmore, bid Ripley adieu, filled the tank- and were off. 
         </p>
 
-        <h2>Weather Patterns</h2>
-        <ul>
-          <li>Seasonal variations</li>
-          <li>Local effects</li>
-          <li>Storm development</li>
-          <li>Wind patterns</li>
-        </ul>
+        ///IMAGE 1
+        ///IMAGE 2
+        <p>Nat hadn’t seen anything apart from some pictures I had taken a week earlier while on a ski tour with Tiffany Hassett. From my estimates, it looked like 2 to 3 pitches of WI4- potentially WI5. Off the bat, I knew I wanted to give this a go with Nat. I was psyched when he shared the stoke. </p>
+        <p>We tried making our bags before going to bed for a start at dawn, but after a hearty dinner, we crept into our bunk beds at the wilderness hostel and opted to wake up earlier to get them done.</p>
 
-        <p>
-          The Alpine region experiences rapid weather changes, making it
-          essential to monitor conditions closely. Understanding these patterns
-          can mean the difference between a successful climb and a dangerous
-          situation.
-        </p>
+        ///IMAGE 3
+        ///IMAGE 4
+      
+      <p>No sweat. We got up, sharpened our picks, ate some oats, and we were off. Skis underfoot at the crack of dawn. Our approach took us just over 2h30 (∼1500m of gain, 8km) over some good ol’ Rockies facets and promising pillow pockets for our ski-out. At the base of the approach couloir, we ditched our skis, slid into our mountain boots, and set off soloing to meet the ice. The initial snow slog quickly gave way to some enjoyable M3 before hitting the ice apron. We continued soloing over WI2 terrain to the base of three distinct pillars. I made an anchor, tied in- and started flaking the rope. 
+      Nat quickly joined me and began flaking the other rope.</p> 
 
-        <h2>Key Factors</h2>
-        <ul>
-          <li>Temperature inversions</li>
-          <li>Wind direction</li>
-          <li>Cloud formation</li>
-          <li>Precipitation types</li>
-        </ul>
+      ///IMAGE 5
+      ///IMAGE 6
 
-        <p>
-          Local knowledge is invaluable. The interaction between different
-          mountain ranges creates microclimates that can significantly impact
-          climbing conditions.
-        </p>
+    <p>Before us there stood a pillar of WI4 with 2 pillars of WI3 flanking its sides. This wasn’t going to be the multi-pitch climb I had estimated it to be. But here we were so we decided to climb all three of them: 
+Climbing to the top, abseiling down to the original anchor, then set off for the next. Repeat. Repeat.
+ </p>
+    <p>
+    After the pillars, we abseiled back down the couloir, swapped into our ski boots, and pointed the tips home. The skiing in the broad gulley was phenomenal and the tree skiing had us laughing hard</p>
 
-        <h2>Safety Guidelines</h2>
-        <ul>
-          <li>Weather monitoring</li>
-          <li>Decision making</li>
-          <li>Emergency planning</li>
-          <li>Communication protocols</li>
-        </ul>
+       
+    ///IMAGE 7
+    ///IMAGE 8
 
-        <p>
-          Always have multiple weather sources and be prepared to adjust plans
-          based on changing conditions.
-        </p>
+      <p>We drove back to the hostel for a proper nighttime breakfast and a blazing sauna. A good day out amongst friends. A memorable way to end a trip.</p>
+
+      <p> We named the route Cerberus WI4 M3.</p>
       </div>
     </div>
   );
