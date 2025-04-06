@@ -105,7 +105,7 @@ const About = () => {
         </div>
 
         <div className="about-intro">
-          <h2>Biography</h2>
+          <h2>About me</h2>
           <div className="bio-content">
             <p>
               ​In 2019, I embarked on a journey into the heart of the Andes,
