@@ -9,7 +9,7 @@ const Footer: React.FC = () => {
           <span>Email</span>
         </a>
         <a
-          href="https://www.instagram.com/jonathan.sage"
+          href="https://www.instagram.com/wandering_mapachito"
           target="_blank"
           rel="noopener noreferrer"
           className="footer-link"
